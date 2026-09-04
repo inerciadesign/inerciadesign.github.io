@@ -24,7 +24,7 @@
   --bg: #0c0c0d;           /* negro de fondo, tono de tu textura */
   --surface: #17171a;      /* gris muy oscuro, para separar secciones */
   --border: #303033;       /* líneas divisorias sutiles */
-  --text: #f1f0eb;         /* blanco hueso, como tu logo INRC. claro */
+  --text: #f2f3f2;         /* blanco hueso, HEX exacto del logo */
   --text-muted: #98979c;   /* gris para textos secundarios */
 
   --font: 'Google Sans Flex Variable', 'Google Sans Flex', sans-serif;
@@ -142,13 +142,12 @@ a { color: inherit; text-decoration: none; }
 }
 
 .hero h1 {
-  font-size: clamp(3.2rem, 11vw, 7.5rem);
-  font-weight: 800;
-  font-variation-settings: 'ROND' 100, 'wght' 800;
-  line-height: 0.92;
-  letter-spacing: -0.01em;
-  text-transform: lowercase;
-  font-style: italic;
+  line-height: 0;
+}
+
+.hero .hero-logo {
+  width: clamp(220px, 42vw, 480px);
+  height: auto;
 }
 
 .hero .slogan {

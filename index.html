@@ -18,7 +18,7 @@
     1. Header (el menú de arriba, fijo al hacer scroll)
     2. Hero (la primera pantalla, con el logo y el slogan)
     3. Intro (bajada corta que explica qué es el catálogo)
-    4. Catálogo (3 secciones: Stickers / Planchas / Identidad visual)
+    4. Catálogo (2 secciones: Stickers / Identidad visual)
     5. Footer (contacto por Instagram)
 
   Cada producto es un bloque <div class="product-card">. Los que dicen
@@ -34,7 +34,6 @@
   </a>
   <nav>
     <a href="#stickers">Stickers</a>
-    <a href="#planchas">Planchas</a>
     <a href="#identidad">Identidad visual</a>
   </nav>
   <a class="header-cta" href="https://instagram.com/inercia.design" target="_blank" rel="noopener">Escribime</a>
@@ -43,7 +42,7 @@
 <section class="hero">
   <div class="hero-inner">
     <p class="hero-eyebrow brand-caps">Tandil · Buenos Aires</p>
-    <h1>INERCIA.</h1>
+    <h1><img src="assets/inercia-logo.png" alt="INERCIA." class="hero-logo"></h1>
     <p class="slogan">Diseñamos lo que te mueve.</p>
     <p class="hero-desc">
       Stickers de autor, planchas para emprendedores e identidad visual.
@@ -64,15 +63,19 @@
   </div>
 </section>
 
-<!-- ================= STICKERS DISPONIBLES ================= -->
+<!-- ================= STICKERS (individuales y planchas para emprendedores) ================= -->
 <section class="catalog-section" id="stickers">
   <div class="container">
     <div class="section-head">
       <div>
-        <h2>Stickers disponibles</h2>
+        <h2>Stickers</h2>
         <p class="section-desc">
           Colecciones de autor inspiradas en bandas, artistas y fútbol,
-          más los pedidos personalizados que me mandás vos.
+          planchas para emprendedores, y pedidos personalizados a partir
+          de una imagen o idea tuya.
+        </p>
+        <p class="section-feature">
+          💧 Todos llevan laminado protector arriba: resistentes al agua y al roce.
         </p>
       </div>
       <p class="section-note">Precio a consultar</p>
@@ -82,12 +85,12 @@
 
       <!--
         EJEMPLO de cómo se ve una tarjeta CON foto real (para cuando
-        subas la tuya). Copiá este bloque para cada sticker:
+        subas la tuya). Copiá este bloque para cada sticker o plancha:
 
         <div class="product-card">
           <img src="assets/sticker-rosalia-01.jpg" alt="Sticker colección Rosalía">
           <p class="product-title">Colección Rosalía</p>
-          <p class="price-tag">A consultar</p>
+          <p class="price-tag">$0000</p>
         </div>
       -->
 
@@ -116,37 +119,6 @@
         <span class="label">Próximamente</span>
       </div>
 
-    </div>
-  </div>
-</section>
-
-<!-- ================= PLANCHAS PARA EMPRENDEDORES ================= -->
-<section class="catalog-section" id="planchas">
-  <div class="container">
-    <div class="section-head">
-      <div>
-        <h2>Planchas para emprendedores</h2>
-        <p class="section-desc">
-          Sets de stickers pensados para marcas y emprendimientos:
-          packaging, agradecimientos, tarjetas y más.
-        </p>
-      </div>
-      <p class="section-note">Precio a consultar</p>
-    </div>
-
-    <div class="product-grid">
-      <div class="product-card is-placeholder">
-        <span class="plus">+</span>
-        <span class="label">Próximamente</span>
-      </div>
-      <div class="product-card is-placeholder">
-        <span class="plus">+</span>
-        <span class="label">Próximamente</span>
-      </div>
-      <div class="product-card is-placeholder">
-        <span class="plus">+</span>
-        <span class="label">Próximamente</span>
-      </div>
     </div>
   </div>
 </section>
