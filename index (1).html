@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>INERCIA. — Diseño gráfico, stickers e identidad visual</title>
+<meta name="description" content="Catálogo de stickers, planchas para emprendedores e identidad visual de INERCIA. Diseño gráfico en Tandil, Buenos Aires.">
+<link rel="icon" href="assets/inrc-blanco.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!--
+  ======================================================================
+  INERCIA. — index.html
+  -----------------------------------------------------------------------
+  Este archivo tiene 5 partes, en este orden:
+    1. Header (el menú de arriba, fijo al hacer scroll)
+    2. Hero (la primera pantalla, con el logo y el slogan)
+    3. Intro (bajada corta que explica qué es el catálogo)
+    4. Catálogo (2 secciones: Stickers / Identidad visual)
+    5. Footer (contacto por Instagram)
+
+  Cada producto es un bloque <div class="product-card">. Los que dicen
+  "is-placeholder" son los que todavía no tienen foto tuya. Cuando tengas
+  la foto, buscá ese bloque y reemplazalo siguiendo el comentario de
+  ejemplo que dejé en la primera sección de Stickers.
+  ======================================================================
+-->
+
+<header class="site-header">
+  <a href="#" class="logo-mark" aria-label="INERCIA, ir al inicio">
+    <img src="assets/inrc-blanco.png" alt="INRC.">
+  </a>
+  <nav>
+    <a href="#stickers">Stickers</a>
+    <a href="#identidad">Identidad visual</a>
+  </nav>
+  <a class="header-cta" href="https://instagram.com/inercia.design" target="_blank" rel="noopener">Escribime</a>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <p class="hero-eyebrow brand-caps">Tandil · Buenos Aires</p>
+    <h1>INERCIA.</h1>
+    <p class="slogan">Diseñamos lo que te mueve.</p>
+    <p class="hero-desc">
+      Stickers de autor, planchas para emprendedores e identidad visual.
+      Este es el catálogo: mirá lo que hay disponible y consultame por
+      Instagram para encargar el tuyo.
+    </p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#stickers">Ver catálogo</a>
+      <a class="btn btn-secondary" href="https://instagram.com/inercia.design" target="_blank" rel="noopener">@inercia.design</a>
+    </div>
+  </div>
+</section>
+
+<section class="intro">
+  <div class="container">
+    <h2>Un catálogo, no una tienda online.</h2>
+    <p>Los precios se confirman por Instagram y el stock cambia seguido, sobre todo en stickers de recitales y eventos.</p>
+  </div>
+</section>
+
+<!-- ================= STICKERS (individuales y planchas para emprendedores) ================= -->
+<section class="catalog-section" id="stickers">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <h2>Stickers</h2>
+        <p class="section-desc">
+          Colecciones de autor inspiradas en bandas, artistas y fútbol,
+          planchas para emprendedores, y pedidos personalizados a partir
+          de una imagen o idea tuya.
+        </p>
+        <p class="section-feature">
+          💧 Todos llevan laminado protector arriba: resistentes al agua y al roce.
+        </p>
+      </div>
+      <p class="section-note">Precio a consultar</p>
+    </div>
+
+    <div class="product-grid">
+
+      <!--
+        EJEMPLO de cómo se ve una tarjeta CON foto real (para cuando
+        subas la tuya). Copiá este bloque para cada sticker o plancha:
+
+        <div class="product-card">
+          <img src="assets/sticker-rosalia-01.jpg" alt="Sticker colección Rosalía">
+          <p class="product-title">Colección Rosalía</p>
+          <p class="price-tag">$0000</p>
+        </div>
+      -->
+
+      <div class="product-card is-placeholder">
+        <span class="plus">+</span>
+        <span class="label">Próximamente</span>
+      </div>
+      <div class="product-card is-placeholder">
+        <span class="plus">+</span>
+        <span class="label">Próximamente</span>
+      </div>
+      <div class="product-card is-placeholder">
+        <span class="plus">+</span>
+        <span class="label">Próximamente</span>
+      </div>
+      <div class="product-card is-placeholder">
+        <span class="plus">+</span>
+        <span class="label">Próximamente</span>
+      </div>
+      <div class="product-card is-placeholder">
+        <span class="plus">+</span>
+        <span class="label">Próximamente</span>
+      </div>
+      <div class="product-card is-placeholder">
+        <span class="plus">+</span>
+        <span class="label">Próximamente</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= IDENTIDAD VISUAL ================= -->
+<section class="catalog-section" id="identidad" style="border-bottom:none;">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <h2>Identidad visual</h2>
+        <p class="section-desc">
+          Branding y papelería: logo, paleta, tipografía y piezas de
+          aplicación para tu marca o proyecto.
+        </p>
+      </div>
+      <p class="section-note">Precio a consultar</p>
+    </div>
+
+    <div class="product-grid">
+      <div class="product-card is-placeholder">
+        <span class="plus">+</span>
+        <span class="label">Próximamente</span>
+      </div>
+      <div class="product-card is-placeholder">
+        <span class="plus">+</span>
+        <span class="label">Próximamente</span>
+      </div>
+      <div class="product-card is-placeholder">
+        <span class="plus">+</span>
+        <span class="label">Próximamente</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-cta">
+      <h2>¿Tenés una idea?<br>Hablemos.</h2>
+      <a class="btn btn-primary" href="https://instagram.com/inercia.design" target="_blank" rel="noopener">Escribir por Instagram</a>
+    </div>
+    <div class="footer-meta">
+      <span class="logo-mark"><img src="assets/inrc-blanco.png" alt="INRC."></span>
+      <span>Tandil, Buenos Aires</span>
+      <span>&copy; <span id="year"></span> INERCIA.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

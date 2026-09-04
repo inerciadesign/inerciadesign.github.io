@@ -147,6 +147,8 @@ a { color: inherit; text-decoration: none; }
   font-variation-settings: 'ROND' 100, 'wght' 800;
   line-height: 0.92;
   letter-spacing: -0.01em;
+  text-transform: lowercase;
+  font-style: italic;
 }
 
 .hero .slogan {
@@ -155,6 +157,8 @@ a { color: inherit; text-decoration: none; }
   font-weight: 700;
   color: var(--text);
   max-width: 20ch;
+  text-transform: lowercase;
+  font-style: italic;
 }
 
 .hero p.hero-desc {
@@ -244,6 +248,14 @@ a { color: inherit; text-decoration: none; }
   color: var(--text-muted);
   max-width: 52ch;
   margin-top: 12px;
+}
+
+.catalog-section .section-feature {
+  color: var(--text);
+  font-weight: 700;
+  font-size: 0.9rem;
+  max-width: 52ch;
+  margin-top: 16px;
 }
 
 .catalog-section .section-note {
