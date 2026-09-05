@@ -223,6 +223,101 @@ a { color: inherit; text-decoration: none; }
   max-width: 40ch;
 }
 
+/* ---------- 6b. Presentación ---------- */
+.presentation {
+  padding: var(--section-padding) 24px;
+  border-bottom: 1px solid var(--border);
+}
+
+.presentation .container {
+  max-width: 680px;
+}
+
+.presentation-eyebrow {
+  font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+  font-weight: 800;
+}
+
+.presentation-tagline {
+  margin-top: 8px;
+  font-size: clamp(1.1rem, 2.2vw, 1.4rem);
+  font-weight: 700;
+  font-style: italic;
+  text-transform: lowercase;
+  color: var(--text-muted);
+}
+
+.presentation-body {
+  margin-top: 24px;
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  max-width: 56ch;
+}
+
+.presentation-signature {
+  margin-top: 20px;
+  font-weight: 700;
+}
+
+/* ---------- 6c. ¿Qué hacemos? ---------- */
+.services {
+  padding: 56px 24px;
+  border-bottom: 1px solid var(--border);
+}
+
+.services h2 {
+  font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+  font-weight: 800;
+  margin-bottom: 28px;
+}
+
+.services-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 16px;
+}
+
+.services-list li {
+  font-weight: 700;
+  font-size: 1.05rem;
+  padding: 10px 20px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+}
+
+.services-list li.services-list-cta {
+  color: var(--text-muted);
+  font-weight: 500;
+  border-style: dashed;
+}
+
+/* ---------- 6d. Tagline reutilizable dentro de secciones de catálogo ---------- */
+.catalog-section .section-tagline {
+  font-weight: 700;
+  font-style: italic;
+  text-transform: lowercase;
+  color: var(--text-muted);
+  margin-top: 6px;
+}
+
+/* ---------- 6e. Lista de tags (Otros trabajos) ---------- */
+.tag-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 12px;
+}
+
+.tag-list li {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  padding: 8px 16px;
+  border: 1px dashed var(--border);
+  border-radius: 999px;
+}
+
 /* ---------- 7. Secciones de catálogo ---------- */
 .catalog-section {
   padding: var(--section-padding) 24px;
@@ -332,7 +427,188 @@ a { color: inherit; text-decoration: none; }
   .product-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
-/* ---------- 8. Footer / contacto ---------- */
+.product-card .btn-comprar {
+  position: relative;
+  z-index: 1;
+  margin-top: 10px;
+  align-self: flex-start;
+  background: var(--text);
+  color: var(--bg);
+  border: none;
+  padding: 8px 18px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  font-family: var(--font);
+  cursor: pointer;
+}
+
+.product-card .btn-comprar:hover { opacity: 0.85; }
+
+/* ---------- 8b. Entrega ---------- */
+.delivery {
+  padding: 48px 24px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+  text-align: center;
+}
+
+.delivery-item h3 {
+  font-weight: 800;
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+}
+
+.delivery-item p {
+  color: var(--text-muted);
+}
+
+.delivery-item a { text-decoration: underline; color: var(--text); }
+
+/* ---------- 8c. Nos vemos en la fila (eventos) ---------- */
+.events {
+  padding: var(--section-padding) 24px;
+}
+
+.events .container { max-width: var(--max-width); margin: 0 auto; }
+
+.events h2 {
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.events-grid {
+  margin-top: 32px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2px;
+  background: var(--border);
+  border: 1px solid var(--border);
+}
+
+.event-card {
+  background: var(--surface);
+  padding: 24px;
+}
+
+.event-artist {
+  font-weight: 800;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.event-meta {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-top: 4px;
+}
+
+/* ---------- 8d. Modal de pedido ---------- */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  z-index: 100;
+}
+
+.modal-overlay.is-open { display: flex; }
+
+.modal-box {
+  position: relative;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 32px;
+  width: 100%;
+  max-width: 420px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.modal-box h3 {
+  font-weight: 800;
+  font-size: 1.4rem;
+}
+
+.modal-sub {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-top: 6px;
+  margin-bottom: 20px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 1.5rem;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.modal-close:hover { color: var(--text); }
+
+.modal-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.modal-box label {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-muted);
+}
+
+.modal-box input[type="text"],
+.modal-box input[type="tel"],
+.modal-box input[type="number"],
+.modal-box textarea {
+  width: 100%;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px 12px;
+  color: var(--text);
+  font-family: var(--font);
+  font-size: 0.95rem;
+}
+
+.modal-box input:focus,
+.modal-box textarea:focus {
+  outline: none;
+  border-color: var(--text-muted);
+}
+
+.radio-row {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-weight: 500;
+  color: var(--text);
+  font-size: 0.9rem;
+}
+
+.radio-row label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  color: var(--text);
+}
+
+/* ---------- 9. Footer / contacto ---------- */
 .site-footer {
   padding: var(--section-padding) 24px 40px;
 }
