@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>INERCIA. — Diseño gráfico, stickers e identidad visual</title>
+<meta name="description" content="Catálogo de INERCIA: stickers, cuadros musicales, identidad visual y piezas gráficas. Diseño en Tandil, Buenos Aires.">
+<link rel="icon" href="assets/inrc-blanco.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!--
+  ======================================================================
+  INERCIA. — index.html
+  -----------------------------------------------------------------------
+  Estructura del archivo, en este orden:
+    1. Header (menú fijo arriba)
+    2. Hero (logo + slogan)
+    3. Presentación (quiénes somos)
+    4. ¿Qué hacemos? (lista de servicios)
+    5. Mirá lo que hay (intro al catálogo)
+    6. Stickers (con precio, stock y botón Comprar)
+    7. Entrega (retiro en Tandil / envío a consultar)
+    8. Cuadros musicales (producto nuevo, botón Consultar)
+    9. Identidad visual (servicio, botón Consultar)
+    10. Otros trabajos (sección flexible/portfolio)
+    11. Nos vemos en la fila (próximos recitales/eventos)
+    12. Cierre (contacto por Instagram)
+    13. Modal de pedido (formulario que se abre al tocar "Comprar")
+
+  ⚠️ IMPORTANTE — CONFIGURAR EL EMAIL DE PEDIDOS:
+  Buscá el texto "TU-EMAIL-AQUI" en este archivo (está en el <form> del
+  modal, cerca del final) y reemplazalo por tu email real. Ese es el
+  mail donde te van a llegar los pedidos. La primera vez que alguien
+  complete el formulario, FormSubmit (el servicio gratuito que lo
+  procesa) te va a mandar un mail para CONFIRMAR esa dirección — tenés
+  que abrirlo y confirmar una sola vez, después funciona solo.
+
+  Los bloques "is-placeholder" son los que todavía no tienen foto tuya.
+  Para reemplazar un placeholder de STICKER por uno real con precio,
+  stock y botón de compra, mirá el comentario de ejemplo dentro de la
+  sección de Stickers.
+  ======================================================================
+-->
+
+<header class="site-header">
+  <a href="#" class="logo-mark" aria-label="INERCIA, ir al inicio">
+    <img src="assets/inrc-blanco.png" alt="INRC.">
+  </a>
+  <nav>
+    <a href="#stickers">Stickers</a>
+    <a href="#cuadros">Cuadros</a>
+    <a href="#identidad">Identidad Visual</a>
+    <a href="#recitales">Recitales</a>
+  </nav>
+  <a class="header-cta" href="https://instagram.com/inercia.design" target="_blank" rel="noopener">Escribime</a>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="hero-inner">
+    <p class="hero-eyebrow brand-caps">Tandil · Buenos Aires</p>
+    <h1><img src="assets/inercia-logo.png" alt="INERCIA." class="hero-logo"></h1>
+    <!-- Reemplazá "assets/slogan.png" por el nombre real de tu archivo cuando lo subas -->
+    <img src="assets/slogan.png" alt="Diseñamos lo que te mueve." class="slogan-img">
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#stickers">Ver catálogo</a>
+      <a class="btn btn-secondary" href="https://instagram.com/inercia.design" target="_blank" rel="noopener">@inercia.design</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PRESENTACIÓN ================= -->
+<section class="presentation">
+  <div class="container">
+    <p class="presentation-eyebrow">Hola! Qué bueno verte por acá.</p>
+    <p class="presentation-body">
+      INERCIA nace desde el diseño gráfico y las ganas de hacer cosas que
+      tengan algo para decir. Identidad visual, contenido, piezas
+      gráficas, stickers y proyectos que van apareciendo por el camino.
+    </p>
+    <p class="presentation-signature">
+      Soy Luisina, diseñadora gráfica. Y esto es lo que hago.
+    </p>
+  </div>
+</section>
+
+<!-- ================= ¿QUÉ HACEMOS? ================= -->
+<section class="services">
+  <div class="container">
+    <h2>¿Qué hacemos?</h2>
+    <ul class="services-list">
+      <li>Identidad visual</li>
+      <li>Diseño para redes</li>
+      <li>Piezas gráficas</li>
+      <li>Stickers</li>
+      <li class="services-list-cta">¿Otra cosa? Consultanos.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= MIRÁ LO QUE HAY ================= -->
+<section class="intro">
+  <div class="container">
+    <h2>Mirá lo que hay.</h2>
+    <p>Una selección de cosas que hacemos, diseñamos y tenemos dando vueltas por INERCIA.</p>
+  </div>
+</section>
+
+<!-- ================= STICKERS ================= -->
+<section class="catalog-section" id="stickers">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <h2>Stickers</h2>
+        <p class="section-tagline">Para pegar donde quieras.</p>
+        <p class="section-desc">
+          Diseños exclusivos inspirados en bandas, artistas, fútbol y
+          todo eso que nos mueve. También hacemos planchas para
+          emprendedores y pedidos personalizados.
+        </p>
+        <p class="section-feature">
+          Todos llevan laminado protector: más resistencia al agua y al
+          roce, y colores que se mantienen por mucho más tiempo.
+        </p>
+      </div>
+    </div>
+
+    <!-- Chips de navegación rápida entre categorías -->
+    <div class="category-nav">
+      <a href="#sticker-futbol">Fútbol</a>
+      <a href="#sticker-f1">F1</a>
+      <a href="#sticker-tv">TV Argentina</a>
+      <a href="#sticker-artistas">Artistas</a>
+      <a href="#sticker-varios">Varios</a>
+    </div>
+
+    <!--
+      EJEMPLO de tarjeta CON foto, precio, stock y botón de compra.
+      Copiá este bloque completo para cada sticker que tengas en stock,
+      dentro de la categoría que corresponda, y cambiá imagen, nombre,
+      precio y data-product:
+
+      <div class="product-card">
+
+
+        <div class="product-image"><img src="assets/sticker-rosalia-01.jpg" alt="Sticker Rosalía"></div>
+
+
+        <div class="product-info">
+
+
+          <p class="product-title">Nombre del diseño</p>
+
+
+          <p class="price-tag">$1500 · 4 disponibles</p>
+
+
+          <button class="btn-comprar" data-stock="1" data-product="Sticker Rosalía - $1500">Comprar</button>
+
+
+        </div>
+
+
+      </div>
+    -->
+
+    <!-- ---- Categoría: Fútbol ---- -->
+    <div class="sticker-category" id="sticker-futbol">
+      <h3 class="category-title">Fútbol</h3>
+      <div class="product-grid">
+        <div class="product-card is-placeholder">
+          <span class="plus">+</span>
+          <span class="label">Próximamente</span>
+        </div>
+        <div class="product-card is-placeholder">
+          <span class="plus">+</span>
+          <span class="label">Próximamente</span>
+        </div>
+        <div class="product-card is-placeholder">
+          <span class="plus">+</span>
+          <span class="label">Próximamente</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---- Categoría: F1 ---- -->
+    <div class="sticker-category" id="sticker-f1">
+      <h3 class="category-title">F1</h3>
+      <div class="product-grid">
+        <div class="product-card">
+
+          <div class="product-image"><img src="assets/sticker-colapinto-coca.jpg" alt="Sticker Colapinto estilo Coca-Cola"></div>
+
+          <div class="product-info">
+
+            <p class="product-title">Coca Cola Colapinto</p>
+
+            <p class="price-tag">$500 · Disponible</p>
+
+            <button class="btn-comprar" data-stock="1" data-product="Sticker Coca Cola Colapinto - $500">Comprar</button>
+
+          </div>
+
+        </div>
+        <div class="product-card">
+
+          <div class="product-image"><img src="assets/sticker-colapinto-43.jpg" alt="Sticker Franco Colapinto 43"></div>
+
+          <div class="product-info">
+
+            <p class="product-title">Colapinto 43</p>
+
+            <p class="price-tag">$800 · Disponible</p>
+
+            <button class="btn-comprar" data-stock="1" data-product="Sticker Colapinto 43 - $800">Comprar</button>
+
+          </div>
+
+        </div>
+        <div class="product-card">
+
+          <div class="product-image"><img src="assets/sticker-colapinto-publicidad.jpg" alt="Sticker publicidad Colapinto"></div>
+
+          <div class="product-info">
+
+            <p class="product-title">Publicidad Colapinto</p>
+
+            <p class="price-tag">$500 · Disponible</p>
+
+            <button class="btn-comprar" data-stock="1" data-product="Sticker Publicidad Colapinto - $500">Comprar</button>
+
+          </div>
+
+        </div>
+        <div class="product-card">
+
+          <div class="product-image"><img src="assets/sticker-colapinto-plata.jpg" alt="Sticker Colapinto Flecha de Plata"></div>
+
+          <div class="product-info">
+
+            <p class="product-title">Colapinto Flecha de Plata</p>
+
+            <p class="price-tag">$1.000 · Disponible</p>
+
+            <button class="btn-comprar" data-stock="1" data-product="Sticker Colapinto Flecha de Plata - $1.000">Comprar</button>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- ---- Categoría: TV Argentina ---- -->
+    <div class="sticker-category" id="sticker-tv">
+      <h3 class="category-title">TV Argentina</h3>
+      <div class="product-grid">
+        <div class="product-card">
+
+          <div class="product-image"><img src="assets/sticker-mirtha.jpg" alt="Sticker Mirtha Legrand, Pasaporte a Río 1948"></div>
+
+          <div class="product-info">
+
+            <p class="product-title">Mirtha: Pasaporte a Río, 1948</p>
+
+            <p class="price-tag">$1.000 · Disponible</p>
+
+            <button class="btn-comprar" data-stock="1" data-product="Sticker Mirtha: Pasaporte a Río, 1948 - $1.000">Comprar</button>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- ---- Categoría: Artistas (con subsecciones por artista) ---- -->
+    <div class="sticker-category" id="sticker-artistas">
+      <h3 class="category-title">Artistas</h3>
+
+      <!-- Copiá este bloque .artist-group para cada artista nuevo -->
+      <div class="artist-group">
+        <h4 class="artist-title">Rosalía</h4>
+        <div class="product-grid">
+          <div class="product-card is-placeholder">
+            <span class="plus">+</span>
+            <span class="label">Próximamente</span>
+          </div>
+          <div class="product-card is-placeholder">
+            <span class="plus">+</span>
+            <span class="label">Próximamente</span>
+          </div>
+          <div class="product-card is-placeholder">
+            <span class="plus">+</span>
+            <span class="label">Próximamente</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="artist-group">
+        <h4 class="artist-title">Wos</h4>
+        <div class="product-grid">
+          <div class="product-card is-placeholder">
+            <span class="plus">+</span>
+            <span class="label">Próximamente</span>
+          </div>
+          <div class="product-card is-placeholder">
+            <span class="plus">+</span>
+            <span class="label">Próximamente</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---- Categoría: Varios ---- -->
+    <div class="sticker-category" id="sticker-varios">
+      <h3 class="category-title">Varios</h3>
+      <div class="product-grid">
+        <div class="product-card">
+
+          <div class="product-image"><img src="assets/sticker-ny-yankees.jpg" alt="Sticker New York Yankees"></div>
+
+          <div class="product-info">
+
+            <p class="product-title">New York Yankees</p>
+
+            <p class="price-tag">$800 · Disponible</p>
+
+            <button class="btn-comprar" data-stock="1" data-product="Sticker New York Yankees - $800">Comprar</button>
+
+          </div>
+
+        </div>
+        <div class="product-card">
+
+          <div class="product-image"><img src="assets/sticker-area51.jpg" alt="Sticker Área 51"></div>
+
+          <div class="product-info">
+
+            <p class="product-title">Área 51</p>
+
+            <p class="price-tag">$700 · Disponible</p>
+
+            <button class="btn-comprar" data-stock="1" data-product="Sticker Área 51 - $700">Comprar</button>
+
+          </div>
+
+        </div>
+        <div class="product-card">
+
+          <div class="product-image"><img src="assets/sticker-lakers.jpg" alt="Sticker Lakers"></div>
+
+          <div class="product-info">
+
+            <p class="product-title">Lakers</p>
+
+            <p class="price-tag">$800 · Disponible</p>
+
+            <button class="btn-comprar" data-stock="1" data-product="Sticker Lakers - $800">Comprar</button>
+
+          </div>
+
+        </div>
+        <div class="product-card">
+
+          <div class="product-image"><img src="assets/sticker-santacruz.jpg" alt="Sticker Santa Cruz"></div>
+
+          <div class="product-info">
+
+            <p class="product-title">Santa Cruz</p>
+
+            <p class="price-tag">$700 · Disponible</p>
+
+            <button class="btn-comprar" data-stock="1" data-product="Sticker Santa Cruz - $700">Comprar</button>
+
+          </div>
+
+        </div>
+        <div class="product-card">
+
+          <div class="product-image"><img src="assets/sticker-ny-knicks.jpg" alt="Sticker New York Knicks"></div>
+
+          <div class="product-info">
+
+            <p class="product-title">New York Knicks</p>
+
+            <p class="price-tag">$700 · Disponible</p>
+
+            <button class="btn-comprar" data-stock="1" data-product="Sticker New York Knicks - $700">Comprar</button>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <p class="section-feature">¿Buscás algo personalizado? <a href="https://instagram.com/inercia.design" target="_blank" rel="noopener">Consultanos</a>.</p>
+  </div>
+</section>
+
+<!-- ================= ENTREGA ================= -->
+<section class="delivery">
+  <div class="container">
+    <div class="delivery-item">
+      <h3>Retiro en Tandil</h3>
+      <p>Coordinamos día y horario por WhatsApp.</p>
+    </div>
+    <div class="delivery-item">
+      <h3>¿Necesitás envío?</h3>
+      <p><a href="https://instagram.com/inercia.design" target="_blank" rel="noopener">Consultanos</a> y lo vemos.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CUADROS MUSICALES ================= -->
+<section class="catalog-section" id="cuadros">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <h2>Cuadros musicales</h2>
+        <p class="section-tagline">Un disco también puede quedar en la pared.</p>
+        <p class="section-desc">
+          Diseños inspirados en discos y canciones para convertir un
+          álbum que te marcó en algo que también podés mirar.
+        </p>
+      </div>
+    </div>
+
+    <div class="product-grid">
+      <!-- Reemplazar por la foto real del cuadro de Spinetta cuando la tengas -->
+      <div class="product-card is-placeholder">
+        <span class="plus">+</span>
+        <span class="label">Ejemplo: Spinetta</span>
+      </div>
+    </div>
+
+    <p class="section-desc" style="margin-top:24px;">
+      Diseño personalizado · Formato A4<br>
+      Precio a consultar
+    </p>
+    <p class="section-feature">
+      ¿Querés uno de otro disco? <a href="https://instagram.com/inercia.design" target="_blank" rel="noopener">Consultanos</a>.
+    </p>
+  </div>
+</section>
+
+<!-- ================= IDENTIDAD VISUAL ================= -->
+<section class="catalog-section" id="identidad">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <h2>Identidad visual</h2>
+        <p class="section-tagline">Que tu marca se vea como lo que es.</p>
+        <p class="section-desc">
+          Logo, paleta, tipografías y piezas para construir una identidad
+          visual con sentido.
+        </p>
+      </div>
+      <a class="btn btn-secondary" href="https://instagram.com/inercia.design" target="_blank" rel="noopener">Consultar</a>
+    </div>
+
+    <div class="product-grid">
+      <div class="product-card is-placeholder">
+        <span class="plus">+</span>
+        <span class="label">Próximamente</span>
+      </div>
+      <div class="product-card is-placeholder">
+        <span class="plus">+</span>
+        <span class="label">Próximamente</span>
+      </div>
+      <div class="product-card is-placeholder">
+        <span class="plus">+</span>
+        <span class="label">Próximamente</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= OTROS TRABAJOS ================= -->
+<section class="catalog-section" id="otros">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <h2>También hacemos otras cosas.</h2>
+        <p class="section-tagline">Porque no todo entra en una categoría.</p>
+      </div>
+    </div>
+
+    <ul class="tag-list">
+      <li>Piezas para redes</li>
+      <li>Flyers</li>
+      <li>Cartelería</li>
+      <li>Trabajos editoriales</li>
+      <li>Packaging</li>
+      <li>Otros proyectos gráficos</li>
+    </ul>
+
+    <div class="product-grid" style="margin-top:32px;">
+      <div class="product-card is-placeholder">
+        <span class="plus">+</span>
+        <span class="label">Próximamente</span>
+      </div>
+      <div class="product-card is-placeholder">
+        <span class="plus">+</span>
+        <span class="label">Próximamente</span>
+      </div>
+      <div class="product-card is-placeholder">
+        <span class="plus">+</span>
+        <span class="label">Próximamente</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= NOS VEMOS EN LA FILA ================= -->
+<section class="events" id="recitales" style="border-bottom:none;">
+  <div class="container">
+    <h2>Nos vemos en la fila.</h2>
+    <p class="section-desc">
+      Próximos recitales donde vamos a estar llevando stickers para
+      vender. Si vas, buscá a INERCIA por ahí.
+    </p>
+
+    <div class="events-grid">
+
+      <!-- Copiá este bloque para cada recital nuevo. El nombre del tour es opcional: si no aplica, borrá esa línea. -->
+      <div class="event-card">
+        <p class="event-artist">Rata Blanca</p>
+        <p class="event-tour">Gira 2026</p>
+        <p class="event-meta">📍 Tandil</p>
+        <p class="event-meta">📅 A confirmar</p>
+      </div>
+
+    </div>
+
+    <p class="section-feature">
+      ¿Buscás algún sticker en particular? <a href="https://instagram.com/inercia.design" target="_blank" rel="noopener">Escribinos</a> antes del show y vemos si lo llevamos.
+    </p>
+
+    <h3 class="events-past-title">Ya estuvimos</h3>
+
+    <div class="events-grid events-grid-past">
+
+      <div class="event-card is-past">
+        <p class="event-artist">Rosalía</p>
+        <p class="event-tour">LUX Tour</p>
+        <p class="event-meta">📍 Movistar Arena · Buenos Aires</p>
+        <p class="event-meta">📅 1 al 6 de agosto</p>
+      </div>
+
+      <div class="event-card is-past">
+        <p class="event-artist">Wos</p>
+        <p class="event-tour">Gira BSAS</p>
+        <p class="event-meta">📍 Club Unión y Progreso · Tandil</p>
+        <p class="event-meta">📅 8 de mayo</p>
+      </div>
+
+      <div class="event-card is-past">
+        <p class="event-artist">Las Pastillas del Abuelo</p>
+        <p class="event-tour">Gira LPDA</p>
+        <p class="event-meta">📍 Club Unión y Progreso · Tandil</p>
+        <p class="event-meta">📅 4 de julio</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= CIERRE ================= -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-cta">
+      <h2>¿Tenés una idea?<br>Hablemos.</h2>
+      <a class="btn btn-primary" href="https://instagram.com/inercia.design" target="_blank" rel="noopener">Escribir por Instagram</a>
+    </div>
+    <div class="footer-meta">
+      <span class="logo-mark"><img src="assets/inrc-blanco.png" alt="INRC."></span>
+      <span>Tandil, Buenos Aires</span>
+      <span>&copy; <span id="year"></span> INERCIA.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ================= MODAL DE PEDIDO ================= -->
+<div class="modal-overlay" id="modalPedido">
+  <div class="modal-box">
+    <button class="modal-close" id="modalClose" aria-label="Cerrar">&times;</button>
+    <h3>Hacer un pedido</h3>
+    <p class="modal-sub">Completá tus datos y te confirmamos por WhatsApp.</p>
+
+    <!--
+      Este formulario usa FormSubmit.co, un servicio gratuito que manda
+      el contenido del formulario directo a tu email, sin necesidad de
+      programar nada más. Reemplazá TU-EMAIL-AQUI por tu email real.
+    -->
+    <form id="formPedido" action="https://formsubmit.co/ajax/inerciadisenografico@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="Nuevo pedido - INERCIA">
+
+      <label for="producto">Producto</label>
+      <input type="text" id="producto" name="Producto" readonly>
+
+      <label for="nombre">Nombre</label>
+      <input type="text" id="nombre" name="Nombre" required>
+
+      <label for="whatsapp">WhatsApp</label>
+      <input type="tel" id="whatsapp" name="WhatsApp" required>
+
+      <label for="cantidad">Cantidad</label>
+      <input type="number" id="cantidad" name="Cantidad" min="1" max="1" value="1" required>
+
+      <label>Entrega</label>
+      <div class="radio-row">
+        <label><input type="radio" name="Entrega" value="Retiro en Tandil" checked> Retiro en Tandil</label>
+        <label><input type="radio" name="Entrega" value="Envío (a consultar)"> Envío (a consultar)</label>
+      </div>
+
+      <label for="mensaje">Mensaje (opcional)</label>
+      <textarea id="mensaje" name="Mensaje" rows="3"></textarea>
+
+      <button type="submit" class="btn btn-primary" id="btnEnviarPedido" style="width:100%; justify-content:center; margin-top:12px;">Enviar pedido</button>
+    </form>
+    <p id="pedidoMensaje" class="modal-feedback" style="display:none;"></p>
+  </div>
+</div>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Permite desplazar los carruseles horizontales con la rueda del
+  // mouse en PC (en mobile y trackpad ya funciona nativo con el dedo).
+  document.querySelectorAll('.product-grid, .events-grid').forEach(function (el) {
+    el.addEventListener('wheel', function (e) {
+      if (Math.abs(e.deltaY) > Math.abs(e.deltaX)) {
+        e.preventDefault();
+        el.scrollLeft += e.deltaY;
+      }
+    }, { passive: false });
+  });
+
+
+  const modal = document.getElementById('modalPedido');
+  const modalClose = document.getElementById('modalClose');
+  const productoInput = document.getElementById('producto');
+  const cantidadInput = document.getElementById('cantidad');
+  const form = document.getElementById('formPedido');
+  const mensajeEl = document.getElementById('pedidoMensaje');
+  const btnEnviar = document.getElementById('btnEnviarPedido');
+
+  document.querySelectorAll('.btn-comprar').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      const stock = parseInt(btn.dataset.stock || '1', 10);
+      productoInput.value = btn.dataset.product || '';
+      cantidadInput.max = stock;
+      cantidadInput.value = 1;
+      form.style.display = '';
+      mensajeEl.style.display = 'none';
+      modal.classList.add('is-open');
+    });
+  });
+
+  // No deja escribir a mano una cantidad mayor al stock disponible
+  cantidadInput.addEventListener('input', function () {
+    const max = parseInt(cantidadInput.max || '1', 10);
+    if (parseInt(cantidadInput.value || '0', 10) > max) {
+      cantidadInput.value = max;
+    }
+  });
+
+  modalClose.addEventListener('click', function () {
+    modal.classList.remove('is-open');
+  });
+
+  modal.addEventListener('click', function (e) {
+    if (e.target === modal) modal.classList.remove('is-open');
+  });
+
+  // Envío por AJAX: evita la pantalla de verificación "no soy un robot"
+  // de FormSubmit y muestra la confirmación directo en el modal.
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    btnEnviar.disabled = true;
+    btnEnviar.textContent = 'Enviando...';
+
+    fetch(form.action, {
+      method: 'POST',
+      headers: { 'Accept': 'application/json' },
+      body: new FormData(form)
+    })
+      .then(function (res) { return res.ok ? res.json() : Promise.reject(res); })
+      .then(function () {
+        form.style.display = 'none';
+        mensajeEl.textContent = '¡Listo! Tu pedido fue enviado. Te vamos a contactar por WhatsApp para confirmar.';
+        mensajeEl.style.display = '';
+        form.reset();
+        btnEnviar.disabled = false;
+        btnEnviar.textContent = 'Enviar pedido';
+      })
+      .catch(function () {
+        mensajeEl.textContent = 'Hubo un problema al enviar el pedido. Probá de nuevo o escribinos por Instagram.';
+        mensajeEl.style.display = '';
+        btnEnviar.disabled = false;
+        btnEnviar.textContent = 'Enviar pedido';
+      });
+  });
+</script>
+
+</body>
+</html>
