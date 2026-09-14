@@ -335,14 +335,6 @@
       "precio": 700,
       "stock": 1,
       "proximamente": false
-    },
-    {
-      "nombre": "Leon test",
-      "categoria": "sticker-f1",
-      "imagen": "assets/leon good looking.jpg",
-      "precio": 800,
-      "stock": 3,
-      "proximamente": false
     }
   ],
   "categorias": [
