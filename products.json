@@ -1,11 +1,4 @@
 {
-  "categorias": [
-    { "id": "sticker-futbol", "titulo": "Fútbol" },
-    { "id": "sticker-f1", "titulo": "F1" },
-    { "id": "sticker-tv", "titulo": "TV Argentina" },
-    { "id": "sticker-artistas", "titulo": "Artistas" },
-    { "id": "sticker-varios", "titulo": "Varios" }
-  ],
   "productos": [
     {
       "nombre": "Tagliafico 3",
@@ -13,7 +6,8 @@
       "imagen": "assets/sticker-tagliafico.jpg",
       "alt": "Sticker Tagliafico 3",
       "precio": 600,
-      "stock": 1
+      "stock": 1,
+      "proximamente": false
     },
     {
       "nombre": "Paredes con la del Mundo",
@@ -21,7 +15,8 @@
       "imagen": "assets/sticker-paredes-mundial.jpg",
       "alt": "Sticker Paredes con la Copa del Mundo",
       "precio": 800,
-      "stock": 1
+      "stock": 1,
+      "proximamente": false
     },
     {
       "nombre": "Maradona",
@@ -29,7 +24,8 @@
       "imagen": "assets/sticker-maradona.jpg",
       "alt": "Sticker Maradona",
       "precio": 800,
-      "stock": 1
+      "stock": 1,
+      "proximamente": false
     },
     {
       "nombre": "CR7",
@@ -37,7 +33,8 @@
       "imagen": "assets/sticker-cr7.jpg",
       "alt": "Sticker CR7",
       "precio": 800,
-      "stock": 1
+      "stock": 1,
+      "proximamente": false
     },
     {
       "nombre": "10 Maradona",
@@ -45,7 +42,8 @@
       "imagen": "assets/sticker-maradona-10.jpg",
       "alt": "Sticker 10 Maradona",
       "precio": 800,
-      "stock": 1
+      "stock": 1,
+      "proximamente": false
     },
     {
       "nombre": "Plancha Messi - El Comienzo, 2006",
@@ -53,7 +51,8 @@
       "imagen": "assets/plancha-messi-comienzo.jpg",
       "alt": "Plancha Messi El Comienzo 2006",
       "precio": 3000,
-      "stock": 1
+      "stock": 1,
+      "proximamente": false
     },
     {
       "nombre": "Coca-Cola Colapinto",
@@ -61,7 +60,8 @@
       "imagen": "assets/sticker-colapinto-coca.jpg",
       "alt": "Sticker Colapinto estilo Coca-Cola",
       "precio": 500,
-      "stock": 1
+      "stock": 1,
+      "proximamente": false
     },
     {
       "nombre": "Colapinto 43",
@@ -69,7 +69,8 @@
       "imagen": "assets/sticker-colapinto-43.jpg",
       "alt": "Sticker Franco Colapinto 43",
       "precio": 800,
-      "stock": 1
+      "stock": 1,
+      "proximamente": false
     },
     {
       "nombre": "Publicidad Colapinto",
@@ -77,7 +78,8 @@
       "imagen": "assets/sticker-colapinto-publicidad.jpg",
       "alt": "Sticker publicidad Colapinto",
       "precio": 500,
-      "stock": 1
+      "stock": 1,
+      "proximamente": false
     },
     {
       "nombre": "Colapinto Flecha de Plata",
@@ -85,7 +87,8 @@
       "imagen": "assets/sticker-colapinto-plata.jpg",
       "alt": "Sticker Colapinto Flecha de Plata",
       "precio": 1000,
-      "stock": 1
+      "stock": 1,
+      "proximamente": false
     },
     {
       "nombre": "FC 43 (Colapinto)",
@@ -93,7 +96,8 @@
       "imagen": "assets/sticker-fc43-colapinto.jpg",
       "alt": "Sticker FC43 Colapinto",
       "precio": 600,
-      "stock": 1
+      "stock": 1,
+      "proximamente": false
     },
     {
       "nombre": "Mirtha: Pasaporte a Río, 1948",
@@ -101,7 +105,8 @@
       "imagen": "assets/sticker-mirtha.jpg",
       "alt": "Sticker Mirtha Legrand, Pasaporte a Río 1948",
       "precio": 1000,
-      "stock": 1
+      "stock": 1,
+      "proximamente": false
     },
     {
       "nombre": "Esperando la Carroza",
@@ -109,7 +114,8 @@
       "imagen": "assets/sticker-esperando-carroza.jpg",
       "alt": "Sticker Esperando la Carroza",
       "precio": 800,
-      "stock": 1
+      "stock": 1,
+      "proximamente": false
     },
     {
       "nombre": "Rosalía 1",
@@ -136,7 +142,8 @@
       "imagen": "assets/sticker-wos-cara.jpg",
       "alt": "Sticker Cara WOS",
       "precio": 500,
-      "stock": 3
+      "stock": 3,
+      "proximamente": false
     },
     {
       "nombre": "Estampita WOS",
@@ -145,7 +152,8 @@
       "imagen": "assets/sticker-wos-estampita.jpg",
       "alt": "Sticker Estampita WOS",
       "precio": 500,
-      "stock": 2
+      "stock": 2,
+      "proximamente": false
     },
     {
       "nombre": "WOS - LIVE",
@@ -154,7 +162,8 @@
       "imagen": "assets/sticker-wos-live.jpg",
       "alt": "Sticker WOS Live",
       "precio": 500,
-      "stock": 2
+      "stock": 2,
+      "proximamente": false
     },
     {
       "nombre": "New York Yankees",
@@ -162,7 +171,8 @@
       "imagen": "assets/sticker-ny-yankees.jpg",
       "alt": "Sticker New York Yankees",
       "precio": 800,
-      "stock": 1
+      "stock": 1,
+      "proximamente": false
     },
     {
       "nombre": "Área 51",
@@ -170,7 +180,8 @@
       "imagen": "assets/sticker-area51.jpg",
       "alt": "Sticker Área 51",
       "precio": 700,
-      "stock": 1
+      "stock": 1,
+      "proximamente": false
     },
     {
       "nombre": "Lakers",
@@ -178,7 +189,8 @@
       "imagen": "assets/sticker-lakers.jpg",
       "alt": "Sticker Lakers",
       "precio": 800,
-      "stock": 1
+      "stock": 1,
+      "proximamente": false
     },
     {
       "nombre": "Santa Cruz",
@@ -186,7 +198,8 @@
       "imagen": "assets/sticker-santacruz.jpg",
       "alt": "Sticker Santa Cruz",
       "precio": 700,
-      "stock": 1
+      "stock": 1,
+      "proximamente": false
     },
     {
       "nombre": "New York Knicks",
@@ -194,7 +207,8 @@
       "imagen": "assets/sticker-ny-knicks.jpg",
       "alt": "Sticker New York Knicks",
       "precio": 700,
-      "stock": 1
+      "stock": 1,
+      "proximamente": false
     },
     {
       "nombre": "Thrasher",
@@ -202,7 +216,8 @@
       "imagen": "assets/sticker-thrasher.jpg",
       "alt": "Sticker Thrasher",
       "precio": 600,
-      "stock": 1
+      "stock": 1,
+      "proximamente": false
     },
     {
       "nombre": "Vans Negro",
@@ -210,7 +225,8 @@
       "imagen": "assets/sticker-vans-negro.jpg",
       "alt": "Sticker Vans negro",
       "precio": 600,
-      "stock": 1
+      "stock": 1,
+      "proximamente": false
     },
     {
       "nombre": "All Good Days",
@@ -218,7 +234,8 @@
       "imagen": "assets/sticker-all-good-days.jpg",
       "alt": "Sticker All Good Days",
       "precio": 800,
-      "stock": 1
+      "stock": 1,
+      "proximamente": false
     },
     {
       "nombre": "Mi Pobre Angelito",
@@ -226,7 +243,8 @@
       "imagen": "assets/sticker-mi-pobre-angelito.jpg",
       "alt": "Sticker Mi Pobre Angelito",
       "precio": 600,
-      "stock": 1
+      "stock": 1,
+      "proximamente": false
     },
     {
       "nombre": "Just Do It.",
@@ -234,7 +252,8 @@
       "imagen": "assets/sticker-just-do-it.jpg",
       "alt": "Sticker Just Do It",
       "precio": 600,
-      "stock": 1
+      "stock": 1,
+      "proximamente": false
     },
     {
       "nombre": "Adidas Originals",
@@ -242,7 +261,8 @@
       "imagen": "assets/sticker-adidas-originals.jpg",
       "alt": "Sticker Adidas Originals",
       "precio": 700,
-      "stock": 1
+      "stock": 1,
+      "proximamente": false
     },
     {
       "nombre": "Pack Coca-Cola",
@@ -250,7 +270,8 @@
       "imagen": "assets/sticker-pack-cocacola.jpg",
       "alt": "Sticker Pack Coca-Cola",
       "precio": 700,
-      "stock": 1
+      "stock": 1,
+      "proximamente": false
     },
     {
       "nombre": "Maradona 1995",
@@ -258,7 +279,8 @@
       "imagen": "assets/sticker-maradona-1995.jpg",
       "alt": "Sticker holográfico de Maradona en 1995",
       "precio": 800,
-      "stock": 1
+      "stock": 1,
+      "proximamente": false
     },
     {
       "nombre": "Messi Estampita",
@@ -266,7 +288,8 @@
       "imagen": "assets/sticker-messi.jpg",
       "alt": "Sticker de Messi con marco dorado, estilo estampita",
       "precio": 700,
-      "stock": 1
+      "stock": 1,
+      "proximamente": false
     },
     {
       "nombre": "La Scaloneta",
@@ -274,7 +297,8 @@
       "imagen": "assets/sticker-scaloneta.jpg",
       "alt": "Sticker holográfico del colectivo de la Scaloneta",
       "precio": 800,
-      "stock": 1
+      "stock": 1,
+      "proximamente": false
     },
     {
       "nombre": "MTV",
@@ -282,7 +306,8 @@
       "imagen": "assets/sticker-mtv-logo.jpg",
       "alt": "Sticker holográfico del logo de MTV Music Television",
       "precio": 800,
-      "stock": 1
+      "stock": 1,
+      "proximamente": false
     },
     {
       "nombre": "Meryl Streep",
@@ -290,7 +315,8 @@
       "imagen": "assets/sticker-meryl-streep.jpg",
       "alt": "Sticker holográfico de Meryl Streep",
       "precio": 800,
-      "stock": 1
+      "stock": 1,
+      "proximamente": false
     },
     {
       "nombre": "Harley-Davidson",
@@ -298,7 +324,8 @@
       "imagen": "assets/sticker-harley-davidson.jpg",
       "alt": "Sticker del logo de Harley-Davidson Motor Cycles",
       "precio": 700,
-      "stock": 1
+      "stock": 1,
+      "proximamente": false
     },
     {
       "nombre": "Mr. Burns",
@@ -306,7 +333,38 @@
       "imagen": "assets/sticker-simpsons.jpg",
       "alt": "Sticker de Mr. Burns de Los Simpsons",
       "precio": 700,
-      "stock": 1
+      "stock": 1,
+      "proximamente": false
+    },
+    {
+      "nombre": "Leon test",
+      "categoria": "sticker-f1",
+      "imagen": "assets/leon good looking.jpg",
+      "precio": 800,
+      "stock": 3,
+      "proximamente": false
+    }
+  ],
+  "categorias": [
+    {
+      "id": "sticker-futbol",
+      "titulo": "Fútbol"
+    },
+    {
+      "id": "sticker-f1",
+      "titulo": "F1"
+    },
+    {
+      "id": "sticker-tv",
+      "titulo": "TV Argentina"
+    },
+    {
+      "id": "sticker-artistas",
+      "titulo": "Artistas"
+    },
+    {
+      "id": "sticker-varios",
+      "titulo": "Varios"
     }
   ]
 }
