@@ -53,6 +53,13 @@ content:
             options:
               min: 0
               step: 1
+          - name: orden
+            label: Posición en la fila
+            description: 1 aparece primero, 2 segundo, y así. Si lo dejás vacío, el sticker va al final de su categoría.
+            type: number
+            options:
+              min: 1
+              step: 1
           - name: proximamente
             label: Próximamente
             description: Muestra la tarjeta gris de "Próximamente" en lugar de la foto.

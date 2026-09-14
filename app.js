@@ -92,7 +92,17 @@
     return grid;
   }
 
-  function renderCategoria(categoria, productos) {
+  // Menor "orden" primero; los que no lo tengan quedan al final, en el orden
+  // en que estén escritos en products.json (Array.sort es estable).
+  function porOrden(a, b) {
+    const oa = Number(a.orden);
+    const ob = Number(b.orden);
+    return (isFinite(oa) ? oa : Infinity) - (isFinite(ob) ? ob : Infinity);
+  }
+
+  function renderCategoria(categoria, todos) {
+    const productos = todos.slice().sort(porOrden);
+
     const bloque = document.createElement('div');
     bloque.className = 'sticker-category';
     bloque.id = categoria.id;
