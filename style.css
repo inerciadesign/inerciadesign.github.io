@@ -643,15 +643,21 @@ section[id], .sticker-category { scroll-margin-top: 76px; }
   scroll-snap-align: start;
 }
 
+/* Recuadro siempre cuadrado: la foto va absoluta para que su alto natural
+   no estire la tarjeta, sin importar si es vertical, cuadrada o apaisada. */
 .product-image {
+  position: relative;
   aspect-ratio: 1 / 1;
+  flex: 0 0 auto;
   background: var(--bg);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  overflow: hidden;
 }
 
+.product-image picture { display: contents; }
+
 .product-image img {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: contain;

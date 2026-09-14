@@ -251,6 +251,62 @@
       "alt": "Sticker Pack Coca-Cola",
       "precio": 700,
       "stock": 1
+    },
+    {
+      "nombre": "Maradona 1995",
+      "categoria": "sticker-futbol",
+      "imagen": "assets/sticker-maradona-1995.jpg",
+      "alt": "Sticker holográfico de Maradona en 1995",
+      "precio": 800,
+      "stock": 1
+    },
+    {
+      "nombre": "Messi Estampita",
+      "categoria": "sticker-futbol",
+      "imagen": "assets/sticker-messi.jpg",
+      "alt": "Sticker de Messi con marco dorado, estilo estampita",
+      "precio": 700,
+      "stock": 1
+    },
+    {
+      "nombre": "La Scaloneta",
+      "categoria": "sticker-futbol",
+      "imagen": "assets/sticker-scaloneta.jpg",
+      "alt": "Sticker holográfico del colectivo de la Scaloneta",
+      "precio": 800,
+      "stock": 1
+    },
+    {
+      "nombre": "MTV",
+      "categoria": "sticker-varios",
+      "imagen": "assets/sticker-mtv-logo.jpg",
+      "alt": "Sticker holográfico del logo de MTV Music Television",
+      "precio": 800,
+      "stock": 1
+    },
+    {
+      "nombre": "Meryl Streep",
+      "categoria": "sticker-varios",
+      "imagen": "assets/sticker-meryl-streep.jpg",
+      "alt": "Sticker holográfico de Meryl Streep",
+      "precio": 800,
+      "stock": 1
+    },
+    {
+      "nombre": "Harley-Davidson",
+      "categoria": "sticker-varios",
+      "imagen": "assets/sticker-harley-davidson.jpg",
+      "alt": "Sticker del logo de Harley-Davidson Motor Cycles",
+      "precio": 700,
+      "stock": 1
+    },
+    {
+      "nombre": "Mr. Burns",
+      "categoria": "sticker-varios",
+      "imagen": "assets/sticker-simpsons.jpg",
+      "alt": "Sticker de Mr. Burns de Los Simpsons",
+      "precio": 700,
+      "stock": 1
     }
   ]
 }

@@ -14,6 +14,18 @@
     return ruta.replace(/\.(jpe?g|png)$/i, '.webp');
   }
 
+  // El navegador elige el <source> por tipo, no por disponibilidad: si el
+  // .webp todavía no existe la imagen queda rota. Al primer error se
+  // descarta el <source> y se reintenta con el original.
+  function conRespaldo(picture, img, original) {
+    img.addEventListener('error', function () {
+      const source = picture.querySelector('source');
+      if (!source) return;
+      source.remove();
+      img.src = original;
+    }, { once: true });
+  }
+
   function crearTarjeta(producto) {
     const card = document.createElement('div');
     card.className = 'product-card';
@@ -43,6 +55,7 @@
     img.loading = 'lazy';
     img.decoding = 'async';
     picture.append(source, img);
+    conRespaldo(picture, img, producto.imagen);
     cont.appendChild(picture);
 
     const info = document.createElement('div');
@@ -429,6 +442,10 @@
 
   document.getElementById('year').textContent = new Date().getFullYear();
   initNav();
+
+  document.querySelectorAll('.product-image picture > img').forEach(function (img) {
+    conRespaldo(img.parentNode, img, img.getAttribute('src'));
+  });
 
   fetch('products.json', { cache: 'no-cache' })
     .then(function (res) {
