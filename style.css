@@ -40,6 +40,14 @@
 
 html { scroll-behavior: smooth; }
 
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
+
+/* Mientras el modal está abierto, la página de atrás no se mueve */
+body.modal-abierto { overflow: hidden; }
+
 body {
   background: var(--bg);
   color: var(--text);
@@ -174,7 +182,8 @@ section[id], .sticker-category { scroll-margin-top: 76px; }
 /* ---------- 5. Hero ---------- */
 .hero {
   position: relative;
-  min-height: 82vh;
+  min-height: calc(100vh - 76px);
+  min-height: calc(100svh - 76px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -359,8 +368,11 @@ section[id], .sticker-category { scroll-margin-top: 76px; }
 }
 
 .catalog-section h2,
-.presentation h2 {
-  text-transform: lowercase;
+.presentation h2,
+.services h2,
+.events h2,
+.footer-cta h2 {
+  text-transform: uppercase;
   letter-spacing: 0.03em;
 }
 
@@ -496,9 +508,123 @@ section[id], .sticker-category { scroll-margin-top: 76px; }
   white-space: nowrap;
 }
 
+/* ---------- 7b. Carruseles horizontales ---------- */
+/* Envoltorio que agrega el script. Las clases at-start / at-end las mantiene
+   el script segun la posicion del scroll. */
+.carousel {
+  position: relative;
+}
+
+/* Degradado en los extremos: indica que la fila sigue, sin tapar nada.
+   Es la unica pista en touch, donde no hay hover ni flechas. */
+.carousel::before,
+.carousel::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 12px;
+  width: 48px;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 1;
+  transition: opacity 0.2s ease;
+}
+
+.carousel::before {
+  left: 0;
+  background: linear-gradient(90deg, var(--bg) 0%, rgba(12, 12, 13, 0) 100%);
+}
+
+.carousel::after {
+  right: 0;
+  background: linear-gradient(270deg, var(--bg) 0%, rgba(12, 12, 13, 0) 100%);
+}
+
+.carousel.at-start::before,
+.carousel.at-end::after {
+  opacity: 0;
+}
+
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  cursor: pointer;
+  font-family: var(--font);
+  font-size: 1.1rem;
+  line-height: 1;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.45);
+  transition: opacity 0.18s ease, background 0.15s ease, transform 0.15s ease;
+}
+
+.carousel-arrow:hover {
+  background: var(--bg);
+  transform: translateY(-50%) scale(1.06);
+}
+
+.carousel-arrow[hidden] { display: none; }
+
+.carousel-arrow.prev { left: -8px; }
+.carousel-arrow.next { right: -8px; }
+
+/* Touch: no hay flechas, alcanza el degradado y el swipe con el dedo. */
+@media (hover: none), (pointer: coarse) {
+  .carousel-arrow { display: none; }
+}
+
+/* Mouse: aparecen al pasar por encima del carrusel, y tambien con teclado
+   (focus-visible), para que sigan siendo alcanzables con Tab. */
+@media (hover: hover) and (pointer: fine) {
+  .carousel-arrow {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .carousel:hover .carousel-arrow,
+  .carousel:focus-within .carousel-arrow,
+  .carousel-arrow:focus-visible {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+.product-grid,
+.events-grid {
+  cursor: grab;
+}
+
+.product-grid.is-dragging,
+.events-grid.is-dragging {
+  cursor: grabbing;
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+  user-select: none;
+}
+
+.product-grid.is-dragging a,
+.events-grid.is-dragging a {
+  pointer-events: none;
+}
+
+.product-grid img,
+.events-grid img {
+  -webkit-user-drag: none;
+  user-select: none;
+}
+
 /* Carrusel horizontal de productos: desliza con el dedo (mobile),
-   trackpad (dos dedos) o mouse wheel (desktop, con la ayuda del script
-   al final del archivo). Los .btn-comprar y demás quedan igual adentro. */
+   trackpad (dos dedos), mouse wheel, arrastre con el mouse o las
+   flechas de los extremos (ver script al final del index). */
 .product-grid {
   display: flex;
   gap: 10px;
@@ -506,16 +632,11 @@ section[id], .sticker-category { scroll-margin-top: 76px; }
   scroll-snap-type: x proximity;
   padding-bottom: 12px;
   -webkit-overflow-scrolling: touch;
-  scrollbar-width: thin;
+  scrollbar-width: none;
 }
 
 .product-grid::-webkit-scrollbar {
-  height: 6px;
-}
-
-.product-grid::-webkit-scrollbar-thumb {
-  background: var(--border);
-  border-radius: 3px;
+  display: none;
 }
 
 .product-card {
@@ -650,16 +771,11 @@ section[id], .sticker-category { scroll-margin-top: 76px; }
   scroll-snap-type: x proximity;
   padding-bottom: 12px;
   -webkit-overflow-scrolling: touch;
-  scrollbar-width: thin;
+  scrollbar-width: none;
 }
 
 .events-grid::-webkit-scrollbar {
-  height: 6px;
-}
-
-.events-grid::-webkit-scrollbar-thumb {
-  background: var(--border);
-  border-radius: 3px;
+  display: none;
 }
 
 .event-card {
@@ -792,13 +908,6 @@ section[id], .sticker-category { scroll-margin-top: 76px; }
   padding: 24px 8px;
   font-weight: 700;
   color: var(--text);
-}
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  font-weight: 500;
-  color: var(--text);
-  font-size: 0.9rem;
 }
 
 .radio-row {
