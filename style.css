@@ -453,14 +453,6 @@ section[id], .sticker-category { scroll-margin-top: 76px; }
   max-width: 52ch;
 }
 
-.product-card.is-plancha {
-  width: clamp(190px, 48vw, 260px);
-}
-
-.product-image.is-plancha {
-  aspect-ratio: 4 / 5;
-}
-
 /* ---------- 7. Secciones de catálogo ---------- */
 .catalog-section {
   padding: var(--section-padding) 24px;
@@ -623,8 +615,8 @@ section[id], .sticker-category { scroll-margin-top: 76px; }
 }
 
 /* Carrusel horizontal de productos: desliza con el dedo (mobile),
-   trackpad (dos dedos), mouse wheel, arrastre con el mouse o las
-   flechas de los extremos (ver script al final del index). */
+   trackpad (dos dedos), arrastre con el mouse o las flechas de los
+   extremos (ver app.js). */
 .product-grid {
   display: flex;
   gap: 10px;
@@ -666,22 +658,27 @@ section[id], .sticker-category { scroll-margin-top: 76px; }
 }
 
 .product-info {
-  padding: 14px 16px 18px;
+  padding: 16px 16px 20px;
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 10px;
+  flex: 1;
 }
 
 .product-card .price-tag {
   font-size: 0.8rem;
   font-weight: 700;
   color: var(--text-muted);
+  margin-bottom: 8px;
 }
 
 .product-card .product-title {
   font-weight: 700;
   font-size: 0.95rem;
+  min-height: 3em;
 }
+
+.product-card .btn-comprar { margin-top: auto; }
 
 /* Estado "todavía no tiene foto": placeholder prolijo, no un error */
 .product-card.is-placeholder {
@@ -818,6 +815,64 @@ section[id], .sticker-category { scroll-margin-top: 76px; }
 .event-card.is-past {
   opacity: 0.55;
 }
+
+/* ---------- 8c-bis. Visor de foto ---------- */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.92);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  z-index: 120;
+}
+
+.lightbox.is-open { display: flex; }
+
+.lightbox-figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.lightbox-figure img {
+  display: block;
+  max-width: min(1100px, 92vw);
+  max-height: 80vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+.lightbox-figure figcaption {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 2rem;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.lightbox-close:hover { color: var(--text); }
+
+.product-card:not(.is-placeholder) {
+  cursor: zoom-in;
+}
+
+.product-card .btn-comprar { cursor: pointer; }
 
 /* ---------- 8d. Modal de pedido ---------- */
 .modal-overlay {

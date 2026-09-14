@@ -1,0 +1,44 @@
+name: Generar WebP
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'assets/**.jpg'
+      - 'assets/**.jpeg'
+      - 'assets/**.png'
+
+permissions:
+  contents: write
+
+jobs:
+  convertir:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Instalar cwebp
+        run: sudo apt-get update && sudo apt-get install -y webp
+
+      - name: Convertir imágenes sin WebP
+        run: |
+          shopt -s nullglob nocaseglob
+          for img in assets/*.jpg assets/*.jpeg assets/*.png; do
+            out="${img%.*}.webp"
+            if [ ! -f "$out" ]; then
+              echo "Convirtiendo $img"
+              cwebp -q 82 -mt "$img" -o "$out"
+            fi
+          done
+
+      - name: Commitear los WebP nuevos
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/*.webp
+          if git diff --staged --quiet; then
+            echo "Nada nuevo que convertir."
+          else
+            git commit -m "Genera WebP para las imágenes nuevas"
+            git push
+          fi

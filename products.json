@@ -1,0 +1,256 @@
+{
+  "categorias": [
+    { "id": "sticker-futbol", "titulo": "Fútbol" },
+    { "id": "sticker-f1", "titulo": "F1" },
+    { "id": "sticker-tv", "titulo": "TV Argentina" },
+    { "id": "sticker-artistas", "titulo": "Artistas" },
+    { "id": "sticker-varios", "titulo": "Varios" }
+  ],
+  "productos": [
+    {
+      "nombre": "Tagliafico 3",
+      "categoria": "sticker-futbol",
+      "imagen": "assets/sticker-tagliafico.jpg",
+      "alt": "Sticker Tagliafico 3",
+      "precio": 600,
+      "stock": 1
+    },
+    {
+      "nombre": "Paredes con la del Mundo",
+      "categoria": "sticker-futbol",
+      "imagen": "assets/sticker-paredes-mundial.jpg",
+      "alt": "Sticker Paredes con la Copa del Mundo",
+      "precio": 800,
+      "stock": 1
+    },
+    {
+      "nombre": "Maradona",
+      "categoria": "sticker-futbol",
+      "imagen": "assets/sticker-maradona.jpg",
+      "alt": "Sticker Maradona",
+      "precio": 800,
+      "stock": 1
+    },
+    {
+      "nombre": "CR7",
+      "categoria": "sticker-futbol",
+      "imagen": "assets/sticker-cr7.jpg",
+      "alt": "Sticker CR7",
+      "precio": 800,
+      "stock": 1
+    },
+    {
+      "nombre": "10 Maradona",
+      "categoria": "sticker-futbol",
+      "imagen": "assets/sticker-maradona-10.jpg",
+      "alt": "Sticker 10 Maradona",
+      "precio": 800,
+      "stock": 1
+    },
+    {
+      "nombre": "Plancha Messi - El Comienzo, 2006",
+      "categoria": "sticker-futbol",
+      "imagen": "assets/plancha-messi-comienzo.jpg",
+      "alt": "Plancha Messi El Comienzo 2006",
+      "precio": 3000,
+      "stock": 1
+    },
+    {
+      "nombre": "Coca-Cola Colapinto",
+      "categoria": "sticker-f1",
+      "imagen": "assets/sticker-colapinto-coca.jpg",
+      "alt": "Sticker Colapinto estilo Coca-Cola",
+      "precio": 500,
+      "stock": 1
+    },
+    {
+      "nombre": "Colapinto 43",
+      "categoria": "sticker-f1",
+      "imagen": "assets/sticker-colapinto-43.jpg",
+      "alt": "Sticker Franco Colapinto 43",
+      "precio": 800,
+      "stock": 1
+    },
+    {
+      "nombre": "Publicidad Colapinto",
+      "categoria": "sticker-f1",
+      "imagen": "assets/sticker-colapinto-publicidad.jpg",
+      "alt": "Sticker publicidad Colapinto",
+      "precio": 500,
+      "stock": 1
+    },
+    {
+      "nombre": "Colapinto Flecha de Plata",
+      "categoria": "sticker-f1",
+      "imagen": "assets/sticker-colapinto-plata.jpg",
+      "alt": "Sticker Colapinto Flecha de Plata",
+      "precio": 1000,
+      "stock": 1
+    },
+    {
+      "nombre": "FC 43 (Colapinto)",
+      "categoria": "sticker-f1",
+      "imagen": "assets/sticker-fc43-colapinto.jpg",
+      "alt": "Sticker FC43 Colapinto",
+      "precio": 600,
+      "stock": 1
+    },
+    {
+      "nombre": "Mirtha: Pasaporte a Río, 1948",
+      "categoria": "sticker-tv",
+      "imagen": "assets/sticker-mirtha.jpg",
+      "alt": "Sticker Mirtha Legrand, Pasaporte a Río 1948",
+      "precio": 1000,
+      "stock": 1
+    },
+    {
+      "nombre": "Esperando la Carroza",
+      "categoria": "sticker-tv",
+      "imagen": "assets/sticker-esperando-carroza.jpg",
+      "alt": "Sticker Esperando la Carroza",
+      "precio": 800,
+      "stock": 1
+    },
+    {
+      "nombre": "Rosalía 1",
+      "categoria": "sticker-artistas",
+      "artista": "Rosalía",
+      "proximamente": true
+    },
+    {
+      "nombre": "Rosalía 2",
+      "categoria": "sticker-artistas",
+      "artista": "Rosalía",
+      "proximamente": true
+    },
+    {
+      "nombre": "Rosalía 3",
+      "categoria": "sticker-artistas",
+      "artista": "Rosalía",
+      "proximamente": true
+    },
+    {
+      "nombre": "Cara WOS",
+      "categoria": "sticker-artistas",
+      "artista": "WOS",
+      "imagen": "assets/sticker-wos-cara.jpg",
+      "alt": "Sticker Cara WOS",
+      "precio": 500,
+      "stock": 3
+    },
+    {
+      "nombre": "Estampita WOS",
+      "categoria": "sticker-artistas",
+      "artista": "WOS",
+      "imagen": "assets/sticker-wos-estampita.jpg",
+      "alt": "Sticker Estampita WOS",
+      "precio": 500,
+      "stock": 2
+    },
+    {
+      "nombre": "WOS - LIVE",
+      "categoria": "sticker-artistas",
+      "artista": "WOS",
+      "imagen": "assets/sticker-wos-live.jpg",
+      "alt": "Sticker WOS Live",
+      "precio": 500,
+      "stock": 2
+    },
+    {
+      "nombre": "New York Yankees",
+      "categoria": "sticker-varios",
+      "imagen": "assets/sticker-ny-yankees.jpg",
+      "alt": "Sticker New York Yankees",
+      "precio": 800,
+      "stock": 1
+    },
+    {
+      "nombre": "Área 51",
+      "categoria": "sticker-varios",
+      "imagen": "assets/sticker-area51.jpg",
+      "alt": "Sticker Área 51",
+      "precio": 700,
+      "stock": 1
+    },
+    {
+      "nombre": "Lakers",
+      "categoria": "sticker-varios",
+      "imagen": "assets/sticker-lakers.jpg",
+      "alt": "Sticker Lakers",
+      "precio": 800,
+      "stock": 1
+    },
+    {
+      "nombre": "Santa Cruz",
+      "categoria": "sticker-varios",
+      "imagen": "assets/sticker-santacruz.jpg",
+      "alt": "Sticker Santa Cruz",
+      "precio": 700,
+      "stock": 1
+    },
+    {
+      "nombre": "New York Knicks",
+      "categoria": "sticker-varios",
+      "imagen": "assets/sticker-ny-knicks.jpg",
+      "alt": "Sticker New York Knicks",
+      "precio": 700,
+      "stock": 1
+    },
+    {
+      "nombre": "Thrasher",
+      "categoria": "sticker-varios",
+      "imagen": "assets/sticker-thrasher.jpg",
+      "alt": "Sticker Thrasher",
+      "precio": 600,
+      "stock": 1
+    },
+    {
+      "nombre": "Vans Negro",
+      "categoria": "sticker-varios",
+      "imagen": "assets/sticker-vans-negro.jpg",
+      "alt": "Sticker Vans negro",
+      "precio": 600,
+      "stock": 1
+    },
+    {
+      "nombre": "All Good Days",
+      "categoria": "sticker-varios",
+      "imagen": "assets/sticker-all-good-days.jpg",
+      "alt": "Sticker All Good Days",
+      "precio": 800,
+      "stock": 1
+    },
+    {
+      "nombre": "Mi Pobre Angelito",
+      "categoria": "sticker-varios",
+      "imagen": "assets/sticker-mi-pobre-angelito.jpg",
+      "alt": "Sticker Mi Pobre Angelito",
+      "precio": 600,
+      "stock": 1
+    },
+    {
+      "nombre": "Just Do It.",
+      "categoria": "sticker-varios",
+      "imagen": "assets/sticker-just-do-it.jpg",
+      "alt": "Sticker Just Do It",
+      "precio": 600,
+      "stock": 1
+    },
+    {
+      "nombre": "Adidas Originals",
+      "categoria": "sticker-varios",
+      "imagen": "assets/sticker-adidas-originals.jpg",
+      "alt": "Sticker Adidas Originals",
+      "precio": 700,
+      "stock": 1
+    },
+    {
+      "nombre": "Pack Coca-Cola",
+      "categoria": "sticker-varios",
+      "imagen": "assets/sticker-pack-cocacola.jpg",
+      "alt": "Sticker Pack Coca-Cola",
+      "precio": 700,
+      "stock": 1
+    }
+  ]
+}

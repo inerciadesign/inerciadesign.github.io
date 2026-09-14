@@ -1,0 +1,75 @@
+media:
+  input: assets
+  output: assets
+  extensions: [jpg, jpeg, png, webp]
+
+content:
+  - name: catalogo
+    label: Catálogo de stickers
+    type: file
+    path: products.json
+    fields:
+      - name: productos
+        label: Stickers
+        type: object
+        list:
+          default: []
+        fields:
+          - name: nombre
+            label: Nombre del diseño
+            type: string
+            required: true
+          - name: categoria
+            label: Categoría
+            type: select
+            required: true
+            options:
+              values:
+                - { value: sticker-futbol, label: Fútbol }
+                - { value: sticker-f1, label: F1 }
+                - { value: sticker-tv, label: TV Argentina }
+                - { value: sticker-artistas, label: Artistas }
+                - { value: sticker-varios, label: Varios }
+          - name: artista
+            label: Artista
+            description: Solo para la categoría Artistas. Agrupa los stickers bajo un subtítulo.
+            type: string
+          - name: imagen
+            label: Foto
+            type: image
+          - name: alt
+            label: Descripción de la foto
+            description: Para lectores de pantalla y buscadores.
+            type: string
+          - name: precio
+            label: Precio
+            type: number
+            options:
+              min: 0
+              step: 50
+          - name: stock
+            label: Unidades disponibles
+            type: number
+            options:
+              min: 0
+              step: 1
+          - name: proximamente
+            label: Próximamente
+            description: Muestra la tarjeta gris de "Próximamente" en lugar de la foto.
+            type: boolean
+
+      - name: categorias
+        label: Categorías
+        type: object
+        list:
+          default: []
+        fields:
+          - name: id
+            label: ID
+            description: Se usa en el link del menú. No cambiarlo si ya hay stickers usándolo.
+            type: string
+            required: true
+          - name: titulo
+            label: Título
+            type: string
+            required: true
