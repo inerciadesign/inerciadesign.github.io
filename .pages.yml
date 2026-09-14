@@ -55,7 +55,7 @@ content:
               step: 1
           - name: orden
             label: Posición en la fila
-            description: 1 aparece primero, 2 segundo, y así. Si lo dejás vacío, el sticker va al final de su categoría.
+            description: El lugar que ocupa dentro de su categoría; 1 lo pone primero y 3 tercero. Dejalo vacío para no fijarle posición.
             type: number
             options:
               min: 1

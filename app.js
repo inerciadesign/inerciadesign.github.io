@@ -92,16 +92,29 @@
     return grid;
   }
 
-  // Menor "orden" primero; los que no lo tengan quedan al final, en el orden
-  // en que estén escritos en products.json (Array.sort es estable).
-  function porOrden(a, b) {
-    const oa = Number(a.orden);
-    const ob = Number(b.orden);
-    return (isFinite(oa) ? oa : Infinity) - (isFinite(ob) ? ob : Infinity);
+  // "orden" es la posición final que se le pide a la tarjeta: 1 = primera,
+  // 3 = tercera. Los que no lo tengan conservan el orden de products.json y
+  // se corren para dejarle el lugar a los que sí lo piden.
+  function acomodar(productos) {
+    const pide = function (p) {
+      const n = Math.round(Number(p.orden));
+      return isFinite(n) && n > 0 ? n : null;
+    };
+
+    const fijos = productos.filter(function (p) { return pide(p) !== null; })
+      .sort(function (a, b) { return pide(a) - pide(b); });
+    const resto = productos.filter(function (p) { return pide(p) === null; });
+
+    fijos.forEach(function (p) {
+      const i = Math.min(pide(p) - 1, resto.length);
+      resto.splice(i, 0, p);
+    });
+
+    return resto;
   }
 
   function renderCategoria(categoria, todos) {
-    const productos = todos.slice().sort(porOrden);
+    const productos = acomodar(todos);
 
     const bloque = document.createElement('div');
     bloque.className = 'sticker-category';
