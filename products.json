@@ -47,7 +47,6 @@
       "nombre": "Plancha Messi - El Comienzo, 2006",
       "categoria": "sticker-futbol",
       "imagen": "assets/WhatsApp Image 2026-09-19 at 16.55.14.jpeg",
-      "alt": "Plancha Messi - El Comienzo 2006",
       "precio": 3000,
       "stock": 1,
       "proximamente": false
@@ -56,7 +55,7 @@
       "nombre": "Coca-Cola Colapinto",
       "categoria": "sticker-f1",
       "imagen": "assets/sticker-colapinto-coca.jpg",
-      "alt": "Sticker Colapinto estilo Coca-Cola",
+      "alt": "Colapinto estilo Coca-Cola",
       "precio": 500,
       "stock": 1,
       "proximamente": false
@@ -65,7 +64,7 @@
       "nombre": "Colapinto 43",
       "categoria": "sticker-f1",
       "imagen": "assets/sticker-colapinto-43.jpg",
-      "alt": "Sticker Franco Colapinto 43",
+      "alt": "Franco Colapinto 43",
       "precio": 800,
       "stock": 1,
       "proximamente": false
@@ -101,7 +100,6 @@
       "nombre": "Mirtha: Pasaporte a Río, 1948",
       "categoria": "sticker-tv",
       "imagen": "assets/03387b78-0560-4917-97bb-9a26c34680cc.jpg",
-      "alt": "Sticker Mirtha Legrand, Pasaporte a Río 1948",
       "precio": 1000,
       "stock": 1,
       "proximamente": false
@@ -119,7 +117,6 @@
       "nombre": "Plancha LUX 01",
       "categoria": "sticker-artistas",
       "artista": "Rosalía",
-      "alt": "Plancha LUX Rosalía 01",
       "precio": 3000,
       "proximamente": true
     },
@@ -141,7 +138,6 @@
       "categoria": "sticker-artistas",
       "artista": "WOS",
       "imagen": "assets/sticker-wos-cara.jpg",
-      "alt": "Sticker Cara WOS",
       "precio": 500,
       "stock": 3,
       "proximamente": false
@@ -151,7 +147,6 @@
       "categoria": "sticker-artistas",
       "artista": "WOS",
       "imagen": "assets/sticker-wos-estampita.jpg",
-      "alt": "Sticker Estampita WOS",
       "precio": 500,
       "stock": 2,
       "proximamente": false
@@ -161,7 +156,6 @@
       "categoria": "sticker-artistas",
       "artista": "WOS",
       "imagen": "assets/sticker-wos-live.jpg",
-      "alt": "Sticker WOS Live",
       "precio": 500,
       "stock": 2,
       "proximamente": false
@@ -170,7 +164,6 @@
       "nombre": "New York Yankees",
       "categoria": "sticker-varios",
       "imagen": "assets/sticker-ny-yankees.jpg",
-      "alt": "Sticker New York Yankees",
       "precio": 800,
       "stock": 1,
       "proximamente": false
@@ -188,7 +181,6 @@
       "nombre": "Lakers",
       "categoria": "sticker-varios",
       "imagen": "assets/sticker-lakers.jpg",
-      "alt": "Sticker Lakers",
       "precio": 800,
       "stock": 1,
       "proximamente": false
@@ -197,7 +189,6 @@
       "nombre": "Santa Cruz",
       "categoria": "sticker-varios",
       "imagen": "assets/sticker-santacruz.jpg",
-      "alt": "Sticker Santa Cruz",
       "precio": 700,
       "stock": 1,
       "proximamente": false
