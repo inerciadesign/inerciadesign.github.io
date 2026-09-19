@@ -3,7 +3,6 @@
     {
       "nombre": "Tagliafico 3",
       "categoria": "sticker-futbol",
-      "imagen": "assets/sticker-tagliafico.jpg",
       "alt": "Sticker Tagliafico 3",
       "precio": 600,
       "stock": 1,
@@ -13,7 +12,6 @@
     {
       "nombre": "Paredes con la del Mundo",
       "categoria": "sticker-futbol",
-      "imagen": "assets/sticker-paredes-mundial.jpg",
       "alt": "Sticker Paredes con la Copa del Mundo",
       "precio": 800,
       "stock": 1,
@@ -31,7 +29,6 @@
     {
       "nombre": "CR7",
       "categoria": "sticker-futbol",
-      "imagen": "assets/sticker-cr7.jpg",
       "alt": "Sticker CR7",
       "precio": 800,
       "stock": 1,
@@ -40,7 +37,7 @@
     {
       "nombre": "10 Maradona",
       "categoria": "sticker-futbol",
-      "imagen": "assets/sticker-maradona-10.jpg",
+      "imagen": "assets/3bbdaab5-6481-4a2d-b0ed-b73d2e08d25b.jpg",
       "alt": "Sticker 10 Maradona",
       "precio": 800,
       "stock": 1,
@@ -49,8 +46,8 @@
     {
       "nombre": "Plancha Messi - El Comienzo, 2006",
       "categoria": "sticker-futbol",
-      "imagen": "assets/plancha-messi-comienzo.jpg",
-      "alt": "Plancha Messi El Comienzo 2006",
+      "imagen": "assets/WhatsApp Image 2026-09-19 at 16.55.14.jpeg",
+      "alt": "Plancha Messi - El Comienzo 2006",
       "precio": 3000,
       "stock": 1,
       "proximamente": false
@@ -103,7 +100,7 @@
     {
       "nombre": "Mirtha: Pasaporte a Río, 1948",
       "categoria": "sticker-tv",
-      "imagen": "assets/sticker-mirtha.jpg",
+      "imagen": "assets/03387b78-0560-4917-97bb-9a26c34680cc.jpg",
       "alt": "Sticker Mirtha Legrand, Pasaporte a Río 1948",
       "precio": 1000,
       "stock": 1,
