@@ -7,7 +7,7 @@
       "precio": 600,
       "stock": 1,
       "orden": 1,
-      "proximamente": false
+      "proximamente": true
     },
     {
       "nombre": "Paredes con la del Mundo",
@@ -15,7 +15,7 @@
       "alt": "Sticker Paredes con la Copa del Mundo",
       "precio": 800,
       "stock": 1,
-      "proximamente": false
+      "proximamente": true
     },
     {
       "nombre": "Maradona",
@@ -24,7 +24,7 @@
       "alt": "Sticker Maradona",
       "precio": 800,
       "stock": 1,
-      "proximamente": false
+      "proximamente": true
     },
     {
       "nombre": "CR7",
@@ -158,7 +158,7 @@
       "imagen": "assets/sticker-wos-live.jpg",
       "precio": 500,
       "stock": 2,
-      "proximamente": false
+      "proximamente": true
     },
     {
       "nombre": "New York Yankees",
@@ -264,8 +264,6 @@
     {
       "nombre": "Maradona 1995",
       "categoria": "sticker-futbol",
-      "imagen": "assets/sticker-maradona-1995.jpg",
-      "alt": "Sticker holográfico de Maradona en 1995",
       "precio": 800,
       "stock": 1,
       "proximamente": false
@@ -274,7 +272,6 @@
       "nombre": "Messi Estampita",
       "categoria": "sticker-futbol",
       "imagen": "assets/sticker-messi.jpg",
-      "alt": "Sticker de Messi con marco dorado, estilo estampita",
       "precio": 700,
       "stock": 1,
       "proximamente": false
