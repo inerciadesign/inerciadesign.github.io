@@ -116,15 +116,18 @@
       "proximamente": false
     },
     {
-      "nombre": "Rosalía 1",
+      "nombre": "Plancha LUX 01",
       "categoria": "sticker-artistas",
       "artista": "Rosalía",
+      "alt": "Plancha LUX Rosalía 01",
+      "precio": 3000,
       "proximamente": true
     },
     {
-      "nombre": "Rosalía 2",
+      "nombre": "Plancha LUX 02",
       "categoria": "sticker-artistas",
       "artista": "Rosalía",
+      "alt": "Plancha LUX Rosalía 02",
       "proximamente": true
     },
     {
