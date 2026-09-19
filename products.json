@@ -205,7 +205,6 @@
     {
       "nombre": "Thrasher",
       "categoria": "sticker-varios",
-      "imagen": "assets/sticker-thrasher.jpg",
       "alt": "Sticker Thrasher",
       "precio": 600,
       "stock": 1,
@@ -214,7 +213,6 @@
     {
       "nombre": "Vans Negro",
       "categoria": "sticker-varios",
-      "imagen": "assets/sticker-vans-negro.jpg",
       "alt": "Sticker Vans negro",
       "precio": 600,
       "stock": 1,
@@ -223,7 +221,6 @@
     {
       "nombre": "All Good Days",
       "categoria": "sticker-varios",
-      "imagen": "assets/sticker-all-good-days.jpg",
       "alt": "Sticker All Good Days",
       "precio": 800,
       "stock": 1,
@@ -232,7 +229,6 @@
     {
       "nombre": "Mi Pobre Angelito",
       "categoria": "sticker-varios",
-      "imagen": "assets/sticker-mi-pobre-angelito.jpg",
       "alt": "Sticker Mi Pobre Angelito",
       "precio": 600,
       "stock": 1,
