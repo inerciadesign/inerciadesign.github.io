@@ -3,6 +3,7 @@
     {
       "nombre": "Tagliafico 3",
       "categoria": "sticker-futbol",
+      "imagen": "assets/sticker-tagliafico.jpg",
       "alt": "Sticker Tagliafico 3",
       "precio": 600,
       "stock": 1,
@@ -12,6 +13,7 @@
     {
       "nombre": "Paredes con la del Mundo",
       "categoria": "sticker-futbol",
+      "imagen": "assets/sticker-paredes-mundial.jpg",
       "alt": "Sticker Paredes con la Copa del Mundo",
       "precio": 800,
       "stock": 1,
@@ -29,6 +31,7 @@
     {
       "nombre": "CR7",
       "categoria": "sticker-futbol",
+      "imagen": "assets/sticker-cr7.jpg",
       "alt": "Sticker CR7",
       "precio": 800,
       "stock": 1,
@@ -205,6 +208,7 @@
     {
       "nombre": "Thrasher",
       "categoria": "sticker-varios",
+      "imagen": "assets/sticker-thrasher.jpg",
       "alt": "Sticker Thrasher",
       "precio": 600,
       "stock": 1,
@@ -213,6 +217,7 @@
     {
       "nombre": "Vans Negro",
       "categoria": "sticker-varios",
+      "imagen": "assets/sticker-vans-negro.jpg",
       "alt": "Sticker Vans negro",
       "precio": 600,
       "stock": 1,
@@ -221,6 +226,7 @@
     {
       "nombre": "All Good Days",
       "categoria": "sticker-varios",
+      "imagen": "assets/sticker-all-good-days.jpg",
       "alt": "Sticker All Good Days",
       "precio": 800,
       "stock": 1,
@@ -229,6 +235,7 @@
     {
       "nombre": "Mi Pobre Angelito",
       "categoria": "sticker-varios",
+      "imagen": "assets/sticker-mi-pobre-angelito.jpg",
       "alt": "Sticker Mi Pobre Angelito",
       "precio": 600,
       "stock": 1,
@@ -264,6 +271,7 @@
     {
       "nombre": "Maradona 1995",
       "categoria": "sticker-futbol",
+      "imagen": "assets/sticker-maradona-1995.jpg",
       "precio": 800,
       "stock": 1,
       "proximamente": false
