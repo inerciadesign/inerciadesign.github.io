@@ -36,6 +36,7 @@ content:
             type: string
           - name: imagen
             label: Foto
+            description: Obligatoria salvo que el sticker esté marcado como Próximamente. Si queda vacía, la tarjeta se muestra gris en la web.
             type: image
           - name: alt
             label: Descripción de la foto

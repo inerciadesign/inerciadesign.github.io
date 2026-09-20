@@ -30,7 +30,7 @@
     const card = document.createElement('div');
     card.className = 'product-card';
 
-    if (producto.proximamente) {
+    if (producto.proximamente || !producto.imagen) {
       card.classList.add('is-placeholder');
       const plus = document.createElement('span');
       plus.className = 'plus';

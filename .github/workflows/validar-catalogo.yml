@@ -1,0 +1,47 @@
+name: Validar catálogo
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'products.json'
+      - 'assets/**'
+  pull_request:
+    paths:
+      - 'products.json'
+      - 'assets/**'
+
+jobs:
+  validar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Revisar que cada sticker tenga su foto
+        run: |
+          node - <<'EOF'
+          const fs = require('fs');
+          const { productos } = JSON.parse(fs.readFileSync('products.json', 'utf8'));
+          const errores = [];
+
+          for (const p of productos) {
+            const nombre = p.nombre || '(sin nombre)';
+            if (p.proximamente) continue;
+            if (!p.imagen) {
+              errores.push(`"${nombre}" se quedó sin foto. Si todavía no tenés la imagen, marcalo como Próximamente.`);
+              continue;
+            }
+            if (!fs.existsSync(p.imagen)) {
+              errores.push(`"${nombre}" apunta a ${p.imagen}, que no existe en el repo.`);
+            }
+          }
+
+          if (errores.length) {
+            console.error('\nEl catálogo quedó roto:\n');
+            for (const e of errores) console.error('  - ' + e);
+            console.error('\nRevisá el último cambio en Pages CMS: guardar un sticker puede borrarle la foto.\n');
+            process.exit(1);
+          }
+
+          console.log(`${productos.length} stickers OK.`);
+          EOF
