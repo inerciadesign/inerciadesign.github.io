@@ -30,7 +30,7 @@
     const card = document.createElement('div');
     card.className = 'product-card';
 
-    if (producto.proximamente || !producto.imagen) {
+    if (esProximamente(producto)) {
       card.classList.add('is-placeholder');
       const plus = document.createElement('span');
       plus.className = 'plus';
@@ -92,10 +92,14 @@
     return grid;
   }
 
+  function esProximamente(p) {
+    return !!p.proximamente || !p.imagen;
+  }
+
   // "orden" es la posición final que se le pide a la tarjeta: 1 = primera,
   // 3 = tercera. Los que no lo tengan conservan el orden de products.json y
   // se corren para dejarle el lugar a los que sí lo piden.
-  function acomodar(productos) {
+  function porOrden(productos) {
     const pide = function (p) {
       const n = Math.round(Number(p.orden));
       return isFinite(n) && n > 0 ? n : null;
@@ -111,6 +115,14 @@
     });
 
     return resto;
+  }
+
+  // Los "Próximamente" van siempre al fondo de su grilla, sin importar el
+  // lugar que pidan.
+  function acomodar(productos) {
+    const disponibles = productos.filter(function (p) { return !esProximamente(p); });
+    const proximos = productos.filter(esProximamente);
+    return porOrden(disponibles).concat(porOrden(proximos));
   }
 
   function renderCategoria(categoria, todos) {
