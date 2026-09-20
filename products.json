@@ -8,7 +8,7 @@
       "precio": 600,
       "stock": 1,
       "orden": 1,
-      "proximamente": true
+      "proximamente": false
     },
     {
       "nombre": "Paredes con la del Mundo",
@@ -17,7 +17,7 @@
       "alt": "Sticker Paredes con la Copa del Mundo",
       "precio": 800,
       "stock": 1,
-      "proximamente": true
+      "proximamente": false
     },
     {
       "nombre": "Maradona",
@@ -26,7 +26,7 @@
       "alt": "Sticker Maradona",
       "precio": 800,
       "stock": 1,
-      "proximamente": true
+      "proximamente": false
     },
     {
       "nombre": "CR7",
@@ -50,6 +50,7 @@
       "nombre": "Plancha Messi - El Comienzo, 2006",
       "categoria": "sticker-futbol",
       "imagen": "assets/WhatsApp Image 2026-09-19 at 16.55.14.jpeg",
+      "alt": "Plancha Messi - El Comienzo 2006",
       "precio": 3000,
       "stock": 1,
       "proximamente": false
@@ -103,6 +104,7 @@
       "nombre": "Mirtha: Pasaporte a Río, 1948",
       "categoria": "sticker-tv",
       "imagen": "assets/03387b78-0560-4917-97bb-9a26c34680cc.jpg",
+      "alt": "Sticker Mirtha Legrand, Pasaporte a Río 1948",
       "precio": 1000,
       "stock": 1,
       "proximamente": false
@@ -120,6 +122,7 @@
       "nombre": "Plancha LUX 01",
       "categoria": "sticker-artistas",
       "artista": "Rosalía",
+      "alt": "Plancha LUX Rosalía 01",
       "precio": 3000,
       "proximamente": true
     },
@@ -141,6 +144,7 @@
       "categoria": "sticker-artistas",
       "artista": "WOS",
       "imagen": "assets/sticker-wos-cara.jpg",
+      "alt": "Sticker Cara WOS",
       "precio": 500,
       "stock": 3,
       "proximamente": false
@@ -150,6 +154,7 @@
       "categoria": "sticker-artistas",
       "artista": "WOS",
       "imagen": "assets/sticker-wos-estampita.jpg",
+      "alt": "Sticker Estampita WOS",
       "precio": 500,
       "stock": 2,
       "proximamente": false
@@ -159,14 +164,16 @@
       "categoria": "sticker-artistas",
       "artista": "WOS",
       "imagen": "assets/sticker-wos-live.jpg",
+      "alt": "Sticker WOS Live",
       "precio": 500,
       "stock": 2,
-      "proximamente": true
+      "proximamente": false
     },
     {
       "nombre": "New York Yankees",
       "categoria": "sticker-varios",
       "imagen": "assets/sticker-ny-yankees.jpg",
+      "alt": "Sticker New York Yankees",
       "precio": 800,
       "stock": 1,
       "proximamente": false
@@ -184,6 +191,7 @@
       "nombre": "Lakers",
       "categoria": "sticker-varios",
       "imagen": "assets/sticker-lakers.jpg",
+      "alt": "Sticker Lakers",
       "precio": 800,
       "stock": 1,
       "proximamente": false
@@ -192,6 +200,7 @@
       "nombre": "Santa Cruz",
       "categoria": "sticker-varios",
       "imagen": "assets/sticker-santacruz.jpg",
+      "alt": "Sticker Santa Cruz",
       "precio": 700,
       "stock": 1,
       "proximamente": false
@@ -272,6 +281,7 @@
       "nombre": "Maradona 1995",
       "categoria": "sticker-futbol",
       "imagen": "assets/sticker-maradona-1995.jpg",
+      "alt": "Sticker holográfico de Maradona en 1995",
       "precio": 800,
       "stock": 1,
       "proximamente": false
@@ -280,6 +290,7 @@
       "nombre": "Messi Estampita",
       "categoria": "sticker-futbol",
       "imagen": "assets/sticker-messi.jpg",
+      "alt": "Sticker de Messi con marco dorado, estilo estampita",
       "precio": 700,
       "stock": 1,
       "proximamente": false
