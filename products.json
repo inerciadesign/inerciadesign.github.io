@@ -55,7 +55,7 @@
     {
       "nombre": "Coca-Cola Colapinto",
       "categoria": "sticker-f1",
-      "imagen": "assets/cocapinto-sticker.png",
+      "imagen": "assets/cocapinto-sticker-1.png",
       "alt": "Colapinto estilo Coca-Cola",
       "precio": 500,
       "stock": 1,
@@ -168,6 +168,7 @@
     {
       "nombre": "New York Yankees",
       "categoria": "sticker-varios",
+      "imagen": "assets/ny-sticker.png",
       "alt": "Sticker New York Yankees",
       "precio": 800,
       "stock": 1,
