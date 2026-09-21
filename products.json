@@ -150,7 +150,7 @@
       "alt": "Sticker Estampita WOS",
       "precio": 500,
       "stock": 2,
-      "proximamente": false
+      "proximamente": true
     },
     {
       "nombre": "WOS - LIVE",
