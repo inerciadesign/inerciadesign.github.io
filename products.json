@@ -90,6 +90,7 @@
     {
       "nombre": "FC 43 (Colapinto)",
       "categoria": "sticker-f1",
+      "imagen": "assets/colapinto-43-1.png",
       "alt": "Sticker FC43 Colapinto",
       "precio": 600,
       "stock": 1,
@@ -219,7 +220,7 @@
     {
       "nombre": "Vans Negro",
       "categoria": "sticker-varios",
-      "imagen": "assets/sticker-vans-negro.jpg",
+      "imagen": "assets/sticker-vans-1.png",
       "alt": "Sticker Vans negro",
       "precio": 600,
       "stock": 1,
@@ -237,7 +238,7 @@
     {
       "nombre": "Mi Pobre Angelito",
       "categoria": "sticker-varios",
-      "imagen": "assets/sticker-mi-pobre-angelito.jpg",
+      "imagen": "assets/angelito-sticker.png",
       "alt": "Sticker Mi Pobre Angelito",
       "precio": 600,
       "stock": 1,
@@ -246,7 +247,6 @@
     {
       "nombre": "Just Do It.",
       "categoria": "sticker-varios",
-      "imagen": "assets/sticker-just-do-it.jpg",
       "alt": "Sticker Just Do It",
       "precio": 600,
       "stock": 1,
@@ -325,7 +325,7 @@
       "categoria": "sticker-futbol",
       "imagen": "assets/river912-sticker.png",
       "alt": "River 9/12 Sticker",
-      "precio": 800,
+      "precio": 700,
       "stock": 1,
       "proximamente": false
     }
