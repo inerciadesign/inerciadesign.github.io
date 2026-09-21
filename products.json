@@ -55,7 +55,7 @@
     {
       "nombre": "Coca-Cola Colapinto",
       "categoria": "sticker-f1",
-      "imagen": "assets/sticker-colapinto-coca.jpg",
+      "imagen": "assets/cocapinto-sticker.png",
       "alt": "Colapinto estilo Coca-Cola",
       "precio": 500,
       "stock": 1,
@@ -228,11 +228,10 @@
     {
       "nombre": "All Good Days",
       "categoria": "sticker-varios",
-      "imagen": "assets/sticker-all-good-days.jpg",
       "alt": "Sticker All Good Days",
       "precio": 800,
       "stock": 1,
-      "proximamente": false
+      "proximamente": true
     },
     {
       "nombre": "Mi Pobre Angelito",
