@@ -186,6 +186,7 @@
     {
       "nombre": "Lakers",
       "categoria": "sticker-varios",
+      "imagen": "assets/ChatGPT Image 21 sept 2026, 15_51_09.png",
       "alt": "Sticker Lakers",
       "precio": 800,
       "stock": 1,
@@ -326,6 +327,15 @@
       "alt": "River 9/12 Sticker",
       "precio": 700,
       "stock": 1,
+      "proximamente": false
+    },
+    {
+      "nombre": "WOS Tandil ",
+      "categoria": "sticker-artistas",
+      "artista": "WOS",
+      "imagen": "assets/ChatGPT Image 21 sept 2026, 15_53_34.png",
+      "alt": "WOS Tandil Recuerdo",
+      "stock": 3,
       "proximamente": false
     }
   ],
