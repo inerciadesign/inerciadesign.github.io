@@ -319,11 +319,10 @@
     {
       "nombre": "Mr. Burns",
       "categoria": "sticker-varios",
-      "imagen": "assets/sticker-simpsons.jpg",
       "alt": "Sticker de Mr. Burns de Los Simpsons",
       "precio": 700,
       "stock": 1,
-      "proximamente": false
+      "proximamente": true
     }
   ],
   "categorias": [
