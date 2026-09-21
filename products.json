@@ -211,11 +211,10 @@
     {
       "nombre": "Thrasher",
       "categoria": "sticker-varios",
-      "imagen": "assets/sticker-thrasher.jpg",
       "alt": "Sticker Thrasher",
       "precio": 600,
       "stock": 1,
-      "proximamente": false
+      "proximamente": true
     },
     {
       "nombre": "Vans Negro",
@@ -250,7 +249,7 @@
       "alt": "Sticker Just Do It",
       "precio": 600,
       "stock": 1,
-      "proximamente": false
+      "proximamente": true
     },
     {
       "nombre": "Adidas Originals",
