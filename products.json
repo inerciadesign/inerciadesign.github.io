@@ -20,11 +20,10 @@
     {
       "nombre": "Maradona",
       "categoria": "sticker-futbol",
-      "imagen": "assets/sticker-maradona.jpg",
       "alt": "Sticker Maradona",
       "precio": 800,
       "stock": 1,
-      "proximamente": false
+      "proximamente": true
     },
     {
       "nombre": "CR7",
@@ -83,20 +82,18 @@
     {
       "nombre": "Colapinto Flecha de Plata",
       "categoria": "sticker-f1",
-      "imagen": "assets/sticker-colapinto-plata.jpg",
       "alt": "Sticker Colapinto Flecha de Plata",
       "precio": 1000,
       "stock": 1,
-      "proximamente": false
+      "proximamente": true
     },
     {
       "nombre": "FC 43 (Colapinto)",
       "categoria": "sticker-f1",
-      "imagen": "assets/sticker-fc43-colapinto.jpg",
       "alt": "Sticker FC43 Colapinto",
       "precio": 600,
       "stock": 1,
-      "proximamente": false
+      "proximamente": true
     },
     {
       "nombre": "Mirtha: Pasaporte a Río, 1948",
