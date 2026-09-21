@@ -67,7 +67,7 @@
     {
       "nombre": "Colapinto 43",
       "categoria": "sticker-f1",
-      "imagen": "assets/sticker-colapinto-43.jpg",
+      "imagen": "assets/colapinto-43.png",
       "alt": "Franco Colapinto 43",
       "precio": 800,
       "stock": 1,
@@ -76,7 +76,7 @@
     {
       "nombre": "Publicidad Colapinto",
       "categoria": "sticker-f1",
-      "imagen": "assets/sticker-colapinto-publicidad.jpg",
+      "imagen": "assets/colapinto-publicidad.png",
       "alt": "Sticker publicidad Colapinto",
       "precio": 500,
       "stock": 1,
