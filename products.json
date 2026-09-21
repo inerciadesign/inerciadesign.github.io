@@ -138,17 +138,15 @@
       "nombre": "Cara WOS",
       "categoria": "sticker-artistas",
       "artista": "WOS",
-      "imagen": "assets/sticker-wos-cara.jpg",
       "alt": "Sticker Cara WOS",
       "precio": 500,
       "stock": 3,
-      "proximamente": false
+      "proximamente": true
     },
     {
       "nombre": "Estampita WOS",
       "categoria": "sticker-artistas",
       "artista": "WOS",
-      "imagen": "assets/sticker-wos-estampita.jpg",
       "alt": "Sticker Estampita WOS",
       "precio": 500,
       "stock": 2,
@@ -158,20 +156,18 @@
       "nombre": "WOS - LIVE",
       "categoria": "sticker-artistas",
       "artista": "WOS",
-      "imagen": "assets/sticker-wos-live.jpg",
       "alt": "Sticker WOS Live",
       "precio": 500,
       "stock": 2,
-      "proximamente": false
+      "proximamente": true
     },
     {
       "nombre": "New York Yankees",
       "categoria": "sticker-varios",
-      "imagen": "assets/sticker-ny-yankees.jpg",
       "alt": "Sticker New York Yankees",
       "precio": 800,
       "stock": 1,
-      "proximamente": false
+      "proximamente": true
     },
     {
       "nombre": "Área 51",
@@ -185,11 +181,10 @@
     {
       "nombre": "Lakers",
       "categoria": "sticker-varios",
-      "imagen": "assets/sticker-lakers.jpg",
       "alt": "Sticker Lakers",
       "precio": 800,
       "stock": 1,
-      "proximamente": false
+      "proximamente": true
     },
     {
       "nombre": "Santa Cruz",
