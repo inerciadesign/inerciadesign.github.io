@@ -270,47 +270,42 @@
     {
       "nombre": "Maradona 1995",
       "categoria": "sticker-futbol",
-      "imagen": "assets/sticker-maradona-1995.jpg",
       "alt": "Sticker holográfico de Maradona en 1995",
       "precio": 800,
       "stock": 1,
-      "proximamente": false
+      "proximamente": true
     },
     {
       "nombre": "Messi Estampita",
       "categoria": "sticker-futbol",
-      "imagen": "assets/sticker-messi.jpg",
       "alt": "Sticker de Messi con marco dorado, estilo estampita",
       "precio": 700,
       "stock": 1,
-      "proximamente": false
+      "proximamente": true
     },
     {
       "nombre": "La Scaloneta",
       "categoria": "sticker-futbol",
-      "imagen": "assets/sticker-scaloneta.jpg",
       "alt": "Sticker holográfico del colectivo de la Scaloneta",
       "precio": 800,
       "stock": 1,
-      "proximamente": false
+      "proximamente": true
     },
     {
       "nombre": "MTV",
       "categoria": "sticker-varios",
-      "imagen": "assets/sticker-mtv-logo.jpg",
       "alt": "Sticker holográfico del logo de MTV Music Television",
       "precio": 800,
       "stock": 1,
-      "proximamente": false
+      "proximamente": true
     },
     {
       "nombre": "Meryl Streep",
       "categoria": "sticker-varios",
-      "imagen": "assets/sticker-meryl-streep.jpg",
       "alt": "Sticker holográfico de Meryl Streep",
       "precio": 800,
       "stock": 1,
-      "proximamente": false
+      "proximamente": true
     },
     {
       "nombre": "Harley-Davidson",
