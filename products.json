@@ -384,6 +384,7 @@
       "imagen": "assets/64d65297-c716-4152-a976-77f6cde1a113.png",
       "alt": "All good days",
       "precio": 800,
+      "stock": 1,
       "proximamente": false
     },
     {
