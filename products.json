@@ -368,6 +368,32 @@
       "precio": 700,
       "stock": 1,
       "proximamente": false
+    },
+    {
+      "nombre": "Lakers",
+      "categoria": "sticker-varios",
+      "imagen": "assets/ChatGPT Image 21 sept 2026, 15_51_09-1.png",
+      "alt": "Lakers",
+      "precio": 600,
+      "stock": 1,
+      "proximamente": false
+    },
+    {
+      "nombre": "All Good Days",
+      "categoria": "sticker-varios",
+      "imagen": "assets/64d65297-c716-4152-a976-77f6cde1a113.png",
+      "alt": "All good days",
+      "precio": 800,
+      "proximamente": false
+    },
+    {
+      "nombre": "Messi - Qué mirás bobo?",
+      "categoria": "sticker-futbol",
+      "imagen": "assets/messiquémiras.png",
+      "alt": "Messi qué miras bobo",
+      "precio": 800,
+      "stock": 1,
+      "proximamente": false
     }
   ],
   "categorias": [
