@@ -452,8 +452,12 @@
       "proximamente": false
     },
     {
-      "nombre": "Motor Harley Davidson",
+      "nombre": "Argentina Ruta 40",
       "categoria": "sticker-varios",
+      "imagen": "assets/ruta40.png",
+      "alt": "Argentina Ruta 40 sticker",
+      "precio": 700,
+      "stock": 1,
       "proximamente": true
     },
     {
@@ -464,6 +468,24 @@
       "alt": "Wos sátira lyrics sticker",
       "precio": 700,
       "stock": 2,
+      "proximamente": false
+    },
+    {
+      "nombre": "NBA Hardwoods Classics ",
+      "categoria": "sticker-varios",
+      "imagen": "assets/CLASSICS.png",
+      "alt": "NBA Hardwoods Classics Sticker",
+      "precio": 700,
+      "stock": 1,
+      "proximamente": false
+    },
+    {
+      "nombre": "La Scaloneta",
+      "categoria": "sticker-futbol",
+      "imagen": "assets/lascaloneta.png",
+      "alt": "La Scaloneta sticker",
+      "precio": 800,
+      "stock": 1,
       "proximamente": false
     }
   ],
