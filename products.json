@@ -325,7 +325,7 @@
       "categoria": "sticker-futbol",
       "imagen": "assets/river912-sticker.png",
       "alt": "River 9/12 Sticker",
-      "precio": 700,
+      "precio": 500,
       "stock": 1,
       "proximamente": false
     },
@@ -337,6 +337,24 @@
       "alt": "WOS Tandil Recuerdo",
       "precio": 800,
       "stock": 3,
+      "proximamente": false
+    },
+    {
+      "nombre": "Messi figurita (Sticker)",
+      "categoria": "sticker-futbol",
+      "imagen": "assets/ChatGPT Image 22 sept 2026, 15_24_57.png",
+      "alt": "Messi figurita dorada",
+      "precio": 700,
+      "proximamente": false
+    },
+    {
+      "nombre": "Okupa Lyrics",
+      "categoria": "sticker-artistas",
+      "artista": "WOS",
+      "imagen": "assets/ChatGPT Image 22 sept 2026, 15_21_26.png",
+      "alt": "WOS Okupa Lyrics",
+      "precio": 500,
+      "stock": 1,
       "proximamente": false
     }
   ],
