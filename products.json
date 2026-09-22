@@ -359,6 +359,15 @@
       "precio": 700,
       "stock": 2,
       "proximamente": false
+    },
+    {
+      "nombre": "Parental Advisory ",
+      "categoria": "sticker-varios",
+      "imagen": "assets/ChatGPT Image 22 sept 2026, 15_31_13.png",
+      "alt": "parental advisory explicit content",
+      "precio": 700,
+      "stock": 1,
+      "proximamente": false
     }
   ],
   "categorias": [
