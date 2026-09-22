@@ -394,6 +394,15 @@
       "precio": 800,
       "stock": 1,
       "proximamente": false
+    },
+    {
+      "nombre": "Escudo AFA",
+      "categoria": "sticker-futbol",
+      "imagen": "assets/afalogo.png",
+      "alt": "Escudo logo afa",
+      "precio": 800,
+      "stock": 1,
+      "proximamente": false
     }
   ],
   "categorias": [
