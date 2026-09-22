@@ -118,16 +118,21 @@
       "nombre": "Plancha LUX 01",
       "categoria": "sticker-artistas",
       "artista": "Rosalía",
-      "alt": "Plancha LUX Rosalía 01",
+      "imagen": "assets/plancha rosalia-1.png",
+      "alt": "Plancha stickers LUX Rosalía ",
       "precio": 3000,
-      "proximamente": true
+      "stock": 10,
+      "proximamente": false
     },
     {
       "nombre": "Plancha LUX 02",
       "categoria": "sticker-artistas",
       "artista": "Rosalía",
-      "alt": "Plancha LUX Rosalía 02",
-      "proximamente": true
+      "imagen": "assets/plancha rosalia 2.png",
+      "alt": "Plancha stickers LUX Rosalía",
+      "precio": 3000,
+      "stock": 9,
+      "proximamente": false
     },
     {
       "nombre": "Rosalía 3",
