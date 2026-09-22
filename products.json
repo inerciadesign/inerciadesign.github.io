@@ -494,6 +494,7 @@
       "imagen": "assets/chicagi.png",
       "alt": "Chicago Bulls sticker",
       "precio": 800,
+      "stock": 1,
       "proximamente": false
     }
   ],
