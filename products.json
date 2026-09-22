@@ -348,6 +348,16 @@
       "precio": 500,
       "stock": 1,
       "proximamente": false
+    },
+    {
+      "nombre": "WOS Oscuro Éxtasis ",
+      "categoria": "sticker-artistas",
+      "artista": "WOS",
+      "imagen": "assets/ChatGPT Image 22 sept 2026, 15_34_42.png",
+      "alt": "Oscuro éxtasis wos",
+      "precio": 700,
+      "stock": 2,
+      "proximamente": false
     }
   ],
   "categorias": [
