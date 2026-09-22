@@ -487,6 +487,14 @@
       "precio": 800,
       "stock": 1,
       "proximamente": false
+    },
+    {
+      "nombre": "Chicago Bulls",
+      "categoria": "sticker-varios",
+      "imagen": "assets/chicagi.png",
+      "alt": "Chicago Bulls sticker",
+      "precio": 800,
+      "proximamente": false
     }
   ],
   "categorias": [
