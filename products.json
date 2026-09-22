@@ -403,6 +403,15 @@
       "precio": 800,
       "stock": 1,
       "proximamente": false
+    },
+    {
+      "nombre": "Mate",
+      "categoria": "sticker-varios",
+      "imagen": "assets/mate.png",
+      "alt": "Mate",
+      "precio": 500,
+      "stock": 1,
+      "proximamente": false
     }
   ],
   "categorias": [
