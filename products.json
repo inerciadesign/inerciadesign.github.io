@@ -422,6 +422,39 @@
       "precio": 700,
       "stock": 1,
       "proximamente": false
+    },
+    {
+      "nombre": "Coca Cola Colapinto 02",
+      "categoria": "sticker-f1",
+      "imagen": "assets/ChatGPT Image 22 sept 2026, 17_22_49.png",
+      "alt": "Coca Cola Colapinto 02",
+      "precio": 500,
+      "stock": 1,
+      "proximamente": false
+    },
+    {
+      "nombre": "WOS Frase",
+      "categoria": "sticker-artistas",
+      "artista": "WOS",
+      "imagen": "assets/ChatGPT Image 22 sept 2026, 17_23_24.png",
+      "alt": "Frase wos",
+      "precio": 500,
+      "stock": 2,
+      "proximamente": false
+    },
+    {
+      "nombre": "3 Empanadas - Esperando la Carroza",
+      "categoria": "sticker-tv",
+      "imagen": "assets/elc.png",
+      "alt": "3 Empanadas Esperando la Carroza sticker",
+      "precio": 800,
+      "stock": 1,
+      "proximamente": false
+    },
+    {
+      "nombre": "Motor Harley Davidson",
+      "categoria": "sticker-varios",
+      "proximamente": true
     }
   ],
   "categorias": [
