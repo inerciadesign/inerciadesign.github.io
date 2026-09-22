@@ -240,7 +240,7 @@
       "categoria": "sticker-varios",
       "imagen": "assets/angelito-sticker.png",
       "alt": "Sticker Mi Pobre Angelito",
-      "precio": 600,
+      "precio": 700,
       "stock": 1,
       "proximamente": false
     },
@@ -298,14 +298,6 @@
       "nombre": "Harley-Davidson",
       "categoria": "sticker-varios",
       "alt": "Sticker del logo de Harley-Davidson Motor Cycles",
-      "precio": 700,
-      "stock": 1,
-      "proximamente": true
-    },
-    {
-      "nombre": "Mr. Burns",
-      "categoria": "sticker-varios",
-      "alt": "Sticker de Mr. Burns de Los Simpsons",
       "precio": 700,
       "stock": 1,
       "proximamente": true
