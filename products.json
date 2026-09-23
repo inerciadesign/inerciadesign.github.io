@@ -557,6 +557,15 @@
       "precio": 700,
       "stock": 1,
       "proximamente": false
+    },
+    {
+      "nombre": "Sol Argentina",
+      "categoria": "sticker-varios",
+      "imagen": "assets/argentinaescudo.png",
+      "alt": "argentina escudo sol sticker",
+      "precio": 800,
+      "stock": 1,
+      "proximamente": false
     }
   ],
   "categorias": [
