@@ -501,6 +501,15 @@
       "precio": 800,
       "stock": 1,
       "proximamente": false
+    },
+    {
+      "nombre": "De Paul figurita (sticker)",
+      "categoria": "sticker-futbol",
+      "imagen": "assets/rdp.png",
+      "alt": "De Paul figurita sticker",
+      "precio": 700,
+      "stock": 1,
+      "proximamente": false
     }
   ],
   "categorias": [
