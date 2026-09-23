@@ -520,6 +520,16 @@
       "precio": 800,
       "stock": 3,
       "proximamente": false
+    },
+    {
+      "nombre": "Rosalía ",
+      "categoria": "sticker-artistas",
+      "artista": "Rosalía",
+      "imagen": "assets/rosalia-sticker-fondo-negro.png",
+      "alt": "Rosalía sticker",
+      "precio": 500,
+      "stock": 1,
+      "proximamente": false
     }
   ],
   "categorias": [
