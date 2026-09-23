@@ -510,6 +510,16 @@
       "precio": 700,
       "stock": 1,
       "proximamente": false
+    },
+    {
+      "nombre": "LUX Logo",
+      "categoria": "sticker-artistas",
+      "artista": "Rosalía",
+      "imagen": "assets/lux.png",
+      "alt": "LUX logo Rosalía sticker",
+      "precio": 800,
+      "stock": 3,
+      "proximamente": false
     }
   ],
   "categorias": [
