@@ -548,6 +548,15 @@
       "precio": 800,
       "stock": 1,
       "proximamente": false
+    },
+    {
+      "nombre": "Ruta 40 Argentina",
+      "categoria": "sticker-varios",
+      "imagen": "assets/arg40.png",
+      "alt": "Argentina ruta 40 sticker",
+      "precio": 700,
+      "stock": 1,
+      "proximamente": false
     }
   ],
   "categorias": [
