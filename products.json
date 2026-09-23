@@ -539,6 +539,15 @@
       "precio": 800,
       "stock": 1,
       "proximamente": false
+    },
+    {
+      "nombre": "Maradona 1995",
+      "categoria": "sticker-futbol",
+      "imagen": "assets/maradona.png",
+      "alt": "Maradona 1995",
+      "precio": 800,
+      "stock": 1,
+      "proximamente": false
     }
   ],
   "categorias": [
