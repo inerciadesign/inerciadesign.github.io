@@ -566,6 +566,24 @@
       "precio": 800,
       "stock": 1,
       "proximamente": false
+    },
+    {
+      "nombre": "Rosalía — Plancha LUX 01",
+      "categoria": "sticker-planchas",
+      "imagen": "assets/plancha rosalia-1.png",
+      "alt": "Plancha stickers LUX Rosalía",
+      "precio": 3000,
+      "stock": 10,
+      "proximamente": false
+    },
+    {
+      "nombre": "Rosalía — Plancha LUX 02",
+      "categoria": "sticker-planchas",
+      "imagen": "assets/plancha rosalia 2.png",
+      "alt": "Plancha stickers LUX Rosalía",
+      "precio": 3000,
+      "stock": 9,
+      "proximamente": false
     }
   ],
   "categorias": [
@@ -588,6 +606,10 @@
     {
       "id": "sticker-varios",
       "titulo": "Varios"
+    },
+    {
+      "id": "sticker-planchas",
+      "titulo": "Planchas Personalizadas"
     }
   ]
 }

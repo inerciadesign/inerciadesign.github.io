@@ -30,6 +30,7 @@ content:
                 - { value: sticker-tv, label: TV Argentina }
                 - { value: sticker-artistas, label: Artistas }
                 - { value: sticker-varios, label: Varios }
+                - { value: sticker-planchas, label: Planchas Personalizadas }
           - name: artista
             label: Artista
             description: Solo para la categoría Artistas. Agrupa los stickers bajo un subtítulo.

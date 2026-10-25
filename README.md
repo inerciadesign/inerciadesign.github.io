@@ -14,7 +14,7 @@ No hace falta tocar código ni instalar nada.
    | Campo | Qué poner |
    |---|---|
    | Nombre del diseño | Como querés que se lea en la web |
-   | Categoría | Fútbol, F1, TV Argentina, Artistas o Varios |
+   | Categoría | Fútbol, F1, TV Argentina, Artistas, Varios o Planchas Personalizadas |
    | Artista | Solo si elegiste Artistas. Agrupa los stickers bajo ese nombre |
    | Foto | Arrastrá el JPG o PNG. Se sube sola a `assets/` |
    | Descripción de la foto | Frase corta describiendo la imagen |
