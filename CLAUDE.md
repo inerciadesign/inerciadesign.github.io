@@ -2,7 +2,7 @@
 
 Sitio de **INERCIA.**, el estudio de diseño gráfico de Luisina en Tandil: catálogo de stickers,
 tatuajes temporales y portfolio. Publicado en GitHub Pages. La diseñadora carga y
-edita los stickers sola desde **Pages CMS** (pagescms.org), sin tocar código: todo lo que ella edita
+edita los stickers y los trabajos del portfolio sola desde **Pages CMS** (pagescms.org), sin tocar código: todo lo que ella edita
 tiene que seguir siendo editable desde ahí.
 
 **Para retomar el trabajo, leer primero "Dónde quedó" y "Pendientes".**
@@ -24,10 +24,10 @@ También sirve Live Server de VS Code o `npx serve`.
 HTML + CSS + JS planos, sin frameworks ni bundler.
 
 ```
-index.html        # toda la estructura; las secciones fijas (tatuajes, recitales, portfolio) se editan acá a mano
+index.html        # toda la estructura; los textos de las secciones, tatuajes y recitales se editan acá a mano
 style.css         # estilos, numerados por sección
-app.js            # dibuja el catálogo de stickers desde products.json; carruseles, visor de fotos, modal de pedido y nav mobile
-content/          # un JSON por sticker (stickers/) y por categoría (categorias/). Es lo único que edita Pages CMS
+app.js            # dibuja stickers y trabajos desde products.json; carruseles, visor de fotos, modal de pedido y nav mobile
+content/          # un JSON por sticker (stickers/), categoría (categorias/) y trabajo (trabajos/). Es lo único que edita Pages CMS
 products.json     # GENERADO por scripts/armar-catalogo.js desde content/. No editar a mano
 scripts/armar-catalogo.js  # valida content/ y arma products.json (correrlo en local tras tocar content/)
 .pages.yml        # el formulario que ve la diseñadora en Pages CMS
@@ -55,6 +55,16 @@ assets/           # imágenes; Pages CMS sube las fotos acá
 
 La diseñadora la crea sola en Pages CMS (colección Categorías: `titulo`, `id` `sticker-xxx`, `orden`). El desplegable del sticker es un campo `reference` a esa colección.
 
+### Trabajos (portfolio)
+
+- `content/trabajos/*.json` → `trabajos` en `products.json`. Campos: `titulo`, `seccion`
+  (`identidad` | `flyers` | `otros`), `tipo` opcional (se muestra bajo el título), `imagen`, `alt`,
+  `orden`, `proximamente`.
+- `renderTrabajos()` llena cada `[data-trabajos="<seccion>"]` de `index.html` y completa con
+  "Próximamente" hasta 3 tarjetas.
+- Sección nueva de trabajos: agregar el valor en `SECCIONES` de `armar-catalogo.js`, en el select
+  `seccion` de `.pages.yml` y un `<div class="product-grid" data-trabajos="...">` en `index.html`.
+
 
 ## Convenciones
 
@@ -71,22 +81,37 @@ La diseñadora la crea sola en Pages CMS (colección Categorías: `titulo`, `id`
   `event-card is-past`, el más reciente primero.
 - **Los JSON de `content/` van con 2 espacios**, como los guarda Pages CMS. `products.json` no se edita a mano.
 - Los commits "via Pages CMS" son de la diseñadora: antes de trabajar, `git pull`.
-- **Al editar archivos por script en Windows, leer y escribir como UTF-8 sin BOM.**
+- **Al editar archivos por script en Windows, leer y escribir como UTF-8 sin BOM.** En PowerShell 5,
+  `Get-Content`/`Set-Content` sin `-Encoding utf8` rompen los acentos: usar Node o
+  `[IO.File]::ReadAllText/WriteAllText` con `UTF8Encoding $false`.
+- Las rutas de fotos pueden tener espacios y comas (las sube Pages CMS tal cual): en `srcset` se
+  escapan (`crearFoto()`).
+- La fuente se carga desde `@fontsource-variable/google-sans-flex/full.css` (todos los ejes): con
+  `wght.css` el `'ROND' 100` del CSS no hace nada.
 
-## Dónde quedó (25 de octubre de 2026)
+## Dónde quedó (16 de noviembre de 2026)
 
-- Se agregó la sección **Tatuajes Temporales** (vacía, "Próximamente."), el ítem en "¿Qué
-  hacemos?" y el link "Tatuajes" en el menú.
-- Rata Blanca pasó a "Ya estuvimos" (11 de septiembre). No hay recitales próximos: la grilla de
-  próximos está vacía.
-- "Lonas" sumado a la lista de otros trabajos del portfolio.
-- Nueva categoría **Planchas Personalizadas** (`sticker-planchas`) con copias de las dos planchas
-  LUX de Rosalía.
+- **Catálogo migrado a un archivo por entrada** (`content/`), con `products.json` generado por
+  la Action `catalogo.yml` (reemplaza a `validar-catalogo.yml`). Se perdió el arrastrar para
+  reordenar: el orden es con "Posición en la fila".
+- **Trabajos editables desde el CMS**: Identidad Visual, **Flyers** (sección nueva) y "También
+  hacemos otras cosas". Todavía no hay ningún trabajo cargado: las tres muestran 3 "Próximamente".
+- Orden de la página y del menú: Identidad Visual → Flyers → Stickers (+ Entrega) → Tatuajes →
+  Y más. Recitales sigue en la página pero salió del menú.
+- **Cuadros Musicales eliminado** (la foto `assets/cuadro-spinetta.*` quedó en el repo sin uso).
+- Textos nuevos: presentación ("¡Hola! Soy Luisina :)"), Identidad Visual ("Tu idea, hecha
+  identidad.") y Tatuajes ("Un detalle diferente para tu evento.", ya no "Próximamente.").
+- Fuente redondeada (carga de todos los ejes).
+- Revisado con Playwright (escritorio y celular): sin errores de consola ni de red.
 
 ## Pendientes
 
 | Qué | Hoy | Qué necesita |
 |---|---|---|
+| Formulario de Pages CMS | Subido pero no probado en el panel | Confirmar que los desplegables de categoría (`reference`) y sección de trabajos muestran las opciones |
+| Texto de Flyers | Lo escribió Claude ("Para que tu evento se haga ver.") | Que Luisina lo apruebe o mande el suyo |
+| Trabajos | Ninguno cargado | Luisina carga sus identidades y flyers desde Trabajos |
+| `assets/cuadro-spinetta.*` | Sin uso | Borrar si no se vuelve a usar |
 | Recitales próximos | Grilla vacía; quedan título y texto | Decidir si se muestra un aviso ("Próximamente nuevas fechas") o se oculta mientras no haya |
 | Planchas LUX en "Personalizadas" | Son un diseño fijo, no personalizado | Confirmar si quedan ahí |
 | Stock duplicado | Las planchas LUX tienen stock en dos entradas | La diseñadora tiene que bajarlo en las dos al vender |
