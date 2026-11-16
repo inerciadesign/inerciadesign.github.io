@@ -1,0 +1,9 @@
+{
+  "nombre": "Vans Negro",
+  "categoria": "sticker-varios",
+  "imagen": "assets/sticker-vans-1.png",
+  "alt": "Sticker Vans negro",
+  "precio": 600,
+  "stock": 1,
+  "proximamente": false
+}

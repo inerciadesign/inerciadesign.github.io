@@ -1,0 +1,9 @@
+{
+  "nombre": "La Scaloneta",
+  "categoria": "sticker-futbol",
+  "imagen": "assets/lascaloneta.png",
+  "alt": "La Scaloneta sticker",
+  "precio": 800,
+  "stock": 1,
+  "proximamente": false
+}

@@ -1,0 +1,10 @@
+{
+  "nombre": "WOS - LIVE",
+  "categoria": "sticker-artistas",
+  "artista": "WOS",
+  "imagen": "assets/wos-live-sticker.png",
+  "alt": "Sticker WOS Live",
+  "precio": 500,
+  "stock": 2,
+  "proximamente": false
+}

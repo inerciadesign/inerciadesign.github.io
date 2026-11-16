@@ -1,0 +1,10 @@
+{
+  "nombre": "The Ratapsons ",
+  "categoria": "sticker-artistas",
+  "artista": "Rata Blanca",
+  "imagen": "assets/sticker-ratablanca.png",
+  "alt": "The Ratapsons (Rata Blanca)",
+  "precio": 700,
+  "stock": 1,
+  "proximamente": false
+}

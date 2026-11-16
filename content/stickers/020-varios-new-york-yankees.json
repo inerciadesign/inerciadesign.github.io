@@ -1,0 +1,9 @@
+{
+  "nombre": "New York Yankees",
+  "categoria": "sticker-varios",
+  "imagen": "assets/ny-sticker.png",
+  "alt": "Sticker New York Yankees",
+  "precio": 800,
+  "stock": 1,
+  "proximamente": true
+}

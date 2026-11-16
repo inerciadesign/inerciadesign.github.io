@@ -1,0 +1,9 @@
+{
+  "nombre": "River 9/12",
+  "categoria": "sticker-futbol",
+  "imagen": "assets/river912-sticker.png",
+  "alt": "River 9/12 Sticker",
+  "precio": 500,
+  "stock": 1,
+  "proximamente": false
+}

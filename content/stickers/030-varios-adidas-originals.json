@@ -1,0 +1,9 @@
+{
+  "nombre": "Adidas Originals",
+  "categoria": "sticker-varios",
+  "imagen": "assets/adidas-sticker-1.png",
+  "alt": "Sticker Adidas Originals",
+  "precio": 700,
+  "stock": 1,
+  "proximamente": false
+}

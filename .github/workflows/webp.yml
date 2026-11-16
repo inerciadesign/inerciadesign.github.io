@@ -11,6 +11,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: commits-del-bot
+  cancel-in-progress: false
+
 jobs:
   convertir:
     runs-on: ubuntu-latest
@@ -40,5 +44,6 @@ jobs:
             echo "Nada nuevo que convertir."
           else
             git commit -m "Genera WebP para las imágenes nuevas"
+            git pull --rebase
             git push
           fi

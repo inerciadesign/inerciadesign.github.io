@@ -1,0 +1,9 @@
+{
+  "nombre": "Messi joven",
+  "categoria": "sticker-futbol",
+  "imagen": "assets/messijoven.png",
+  "alt": "Messi joven sticker",
+  "precio": 800,
+  "stock": 1,
+  "proximamente": false
+}

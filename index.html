@@ -4,14 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>INERCIA. — Diseño gráfico, stickers e identidad visual</title>
-<meta name="description" content="Catálogo de INERCIA: stickers, cuadros musicales, identidad visual y piezas gráficas. Diseño en Tandil, Buenos Aires.">
+<meta name="description" content="Catálogo de INERCIA: stickers, tatuajes temporales, identidad visual y piezas gráficas. Diseño en Tandil, Buenos Aires.">
 <link rel="icon" href="assets/inrc-blanco.png">
 
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="INERCIA.">
 <meta property="og:locale" content="es_AR">
 <meta property="og:title" content="INERCIA. — Diseñamos lo que te mueve.">
-<meta property="og:description" content="Stickers, cuadros musicales e identidad visual. Diseño gráfico desde Tandil, Buenos Aires.">
+<meta property="og:description" content="Stickers, tatuajes temporales e identidad visual. Diseño gráfico desde Tandil, Buenos Aires.">
 <meta property="og:url" content="https://inerciadesign.github.io/">
 <meta property="og:image" content="https://inerciadesign.github.io/assets/og-image.jpg">
 <meta property="og:image:width" content="1200">
@@ -21,7 +21,7 @@
 <meta name="theme-color" content="#0c0c0d">
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link rel="preload" as="image" href="assets/textura.webp">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource-variable/google-sans-flex/wght.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource-variable/google-sans-flex/full.css">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -30,20 +30,21 @@
   ======================================================================
   INERCIA. — index.html
   -----------------------------------------------------------------------
-  Estructura del archivo, en este orden:
+    Estructura del archivo, en este orden:
     1. Header (menú fijo arriba)
     2. Hero (logo + slogan)
-    3. Presentación (quiénes somos)
+    3. Presentación
     4. ¿Qué hacemos? (lista de servicios)
     5. Mirá lo que hay (intro al catálogo)
-    6. Stickers (con precio, stock y botón Comprar)
-    7. Entrega (retiro en Tandil / envío a consultar)
-    8. Cuadros musicales (producto nuevo, botón Consultar)
-    9. Identidad visual (servicio, botón Consultar)
-    10. Otros trabajos (sección flexible/portfolio)
-    11. Nos vemos en la fila (próximos recitales/eventos)
-    12. Cierre (contacto por Instagram)
-    13. Modal de pedido (formulario que se abre al tocar "Comprar")
+    6. Identidad visual   (tarjetas desde content/trabajos)
+    7. Flyers             (tarjetas desde content/trabajos)
+    8. Stickers           (desde content/stickers)
+    9. Entrega
+    10. Tatuajes temporales
+    11. Otros trabajos    (tarjetas desde content/trabajos)
+    12. Nos vemos en la fila (recitales)
+    13. Cierre
+    14. Visor de foto y modal de pedido
 
   Los stickers NO se editan acá: viven en products.json y los dibuja
   app.js. Para cargarlos sin tocar código, usá el panel de PagesCMS
@@ -59,11 +60,10 @@
     <span></span><span></span><span></span>
   </button>
   <nav id="siteNav">
-    <a href="#stickers">Stickers</a>
-    <a href="#cuadros">Cuadros</a>
-    <a href="#tatuajes">Tatuajes</a>
     <a href="#identidad">Identidad Visual</a>
-    <a href="#recitales">Recitales</a>
+    <a href="#flyers">Flyers</a>
+    <a href="#stickers">Stickers</a>
+    <a href="#tatuajes">Tatuajes</a>
     <a href="#otros">Y más</a>
   </nav>
 </header>
@@ -85,18 +85,17 @@
 <!-- ================= PRESENTACIÓN ================= -->
 <section class="presentation">
   <div class="container">
-    <p class="presentation-eyebrow">Hola! Qué bueno verte por acá.</p>
+    <p class="presentation-eyebrow">¡Hola! Soy Luisina :)</p>
     <p class="presentation-body">
-      INERCIA nace desde el diseño gráfico y las ganas de hacer. De
-      transformar ideas, referencias y cosas que nos gustan en algo que
-      se pueda ver, usar y llevar.
+      Detrás de INERCIA estoy yo, diseñadora gráfica y apasionada por crear.
     </p>
     <p class="presentation-body">
-      Identidad visual, contenido, piezas gráficas, stickers y proyectos
-      que van apareciendo por el camino.
+      Acá vas a encontrar identidades visuales, piezas gráficas, stickers y
+      distintos proyectos de diseño. Me gusta trabajar con ideas nuevas y
+      buscar la mejor manera de llevarlas a lo visual.
     </p>
     <p class="presentation-signature">
-      Soy Luisina, diseñadora gráfica. Y esto es INERCIA.
+      Si tenés algo en mente, estás en el lugar indicado.
     </p>
   </div>
 </section>
@@ -121,6 +120,44 @@
   <div class="container">
     <h2>Mirá lo que hay.</h2>
     <p>Una selección de cosas que hacemos, diseñamos y tenemos dando vueltas por INERCIA.</p>
+  </div>
+</section>
+
+<!-- ================= IDENTIDAD VISUAL ================= -->
+<section class="catalog-section" id="identidad">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <h2>Identidad Visual</h2>
+        <p class="section-tagline">Tu idea, hecha identidad.</p>
+        <p class="section-desc">
+          Diseñamos marcas con personalidad, pensadas para transmitir lo
+          que sos y lo que querés comunicar.
+        </p>
+      </div>
+      <a class="btn btn-secondary" href="https://instagram.com/inercia.design" target="_blank" rel="noopener">Consultar</a>
+    </div>
+
+    <div class="product-grid" data-trabajos="identidad"></div>
+  </div>
+</section>
+
+<!-- ================= FLYERS ================= -->
+<section class="catalog-section" id="flyers">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <h2>Flyers</h2>
+        <p class="section-tagline">Para que tu evento se haga ver.</p>
+        <p class="section-desc">
+          Flyers para fiestas, eventos, promos y lanzamientos, pensados
+          para llamar la atención en redes y en la calle.
+        </p>
+      </div>
+      <a class="btn btn-secondary" href="https://instagram.com/inercia.design" target="_blank" rel="noopener">Consultar</a>
+    </div>
+
+    <div class="product-grid" data-trabajos="flyers"></div>
   </div>
 </section>
 
@@ -156,65 +193,6 @@
   </div>
 </section>
 
-<!-- ================= CUADROS MUSICALES ================= -->
-<section class="catalog-section" id="cuadros">
-  <div class="container">
-    <div class="section-head">
-      <div>
-        <h2>Cuadros Musicales</h2>
-        <p class="section-tagline">Un disco también puede quedar en la pared.</p>
-        <p class="section-desc">
-          Diseños inspirados en discos y canciones para convertir un
-          álbum que te marcó en algo que también podés mirar.
-        </p>
-      </div>
-    </div>
-
-    <div class="product-grid">
-      <div class="product-card">
-        <div class="product-image">
-          <picture>
-            <source type="image/webp" srcset="assets/cuadro-spinetta.webp">
-            <img src="assets/cuadro-spinetta.jpg" alt="Cuadro de Luis Alberto Spinetta, Pelusón of Milk" loading="lazy" decoding="async">
-          </picture>
-        </div>
-        <div class="product-info">
-          <p class="product-title">Spinetta — Pelusón of&nbsp;Milk</p>
-          <p class="price-tag">Precio a consultar</p>
-        </div>
-      </div>
-    </div>
-
-    <p class="section-desc" style="margin-top:24px;">
-      Diseño personalizado · Formato A4<br>
-      Precio a consultar
-    </p>
-    <p class="section-feature">
-      ¿Querés uno de otro disco? <a href="https://instagram.com/inercia.design" target="_blank" rel="noopener">Consultanos</a>.
-    </p>
-  </div>
-</section>
-
-<!-- ================= TATUAJES TEMPORALES ================= -->
-<section class="catalog-section" id="tatuajes">
-  <div class="container">
-    <div class="section-head">
-      <div>
-        <h2>Tatuajes Temporales</h2>
-        <p class="section-tagline">Próximamente.</p>
-        <p class="section-desc">
-          Diseños para llevar en la piel sin compromiso. Muy pronto vas a
-          encontrarlos acá.
-        </p>
-      </div>
-    </div>
-
-    <p class="section-feature">
-      ¿Querés uno personalizado? <a href="https://instagram.com/inercia.design" target="_blank" rel="noopener">Consultanos</a>.
-    </p>
-  </div>
-</section>
-
 <!-- ================= ENTREGA ================= -->
 <section class="delivery">
   <div class="container">
@@ -229,34 +207,24 @@
   </div>
 </section>
 
-<!-- ================= IDENTIDAD VISUAL ================= -->
-<section class="catalog-section" id="identidad">
+<!-- ================= TATUAJES TEMPORALES ================= -->
+<section class="catalog-section" id="tatuajes">
   <div class="container">
     <div class="section-head">
       <div>
-        <h2>Identidad Visual</h2>
-        <p class="section-tagline">Que tu marca se vea como lo que es.</p>
+        <h2>Tatuajes Temporales</h2>
+        <p class="section-tagline">Un detalle diferente para tu evento.</p>
         <p class="section-desc">
-          Una identidad propia para una idea propia.
+          Para grandes, chicos y todos los que se quieran sumar. Tatuajes
+          temporales para darle un toque divertido y original a cualquier
+          festejo.
         </p>
       </div>
-      <a class="btn btn-secondary" href="https://instagram.com/inercia.design" target="_blank" rel="noopener">Consultar</a>
     </div>
 
-    <div class="product-grid">
-      <div class="product-card is-placeholder">
-        <span class="plus">+</span>
-        <span class="label">Próximamente</span>
-      </div>
-      <div class="product-card is-placeholder">
-        <span class="plus">+</span>
-        <span class="label">Próximamente</span>
-      </div>
-      <div class="product-card is-placeholder">
-        <span class="plus">+</span>
-        <span class="label">Próximamente</span>
-      </div>
-    </div>
+    <p class="section-feature">
+      ¡<a href="https://instagram.com/inercia.design" target="_blank" rel="noopener">Consultanos</a> para tu próximo evento!
+    </p>
   </div>
 </section>
 
@@ -272,7 +240,6 @@
 
     <ul class="tag-list">
       <li>Piezas para Redes</li>
-      <li>Flyers</li>
       <li>Cartelería</li>
       <li>Trabajos Editoriales</li>
       <li>Packaging</li>
@@ -280,20 +247,7 @@
       <li>Otros Proyectos Gráficos</li>
     </ul>
 
-    <div class="product-grid" style="margin-top:32px;">
-      <div class="product-card is-placeholder">
-        <span class="plus">+</span>
-        <span class="label">Próximamente</span>
-      </div>
-      <div class="product-card is-placeholder">
-        <span class="plus">+</span>
-        <span class="label">Próximamente</span>
-      </div>
-      <div class="product-card is-placeholder">
-        <span class="plus">+</span>
-        <span class="label">Próximamente</span>
-      </div>
-    </div>
+    <div class="product-grid" data-trabajos="otros" style="margin-top:32px;"></div>
   </div>
 </section>
 

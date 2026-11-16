@@ -1,7 +1,7 @@
 # CLAUDE.md
 
 Sitio de **INERCIA.**, el estudio de diseño gráfico de Luisina en Tandil: catálogo de stickers,
-cuadros musicales, tatuajes temporales y portfolio. Publicado en GitHub Pages. La diseñadora carga y
+tatuajes temporales y portfolio. Publicado en GitHub Pages. La diseñadora carga y
 edita los stickers sola desde **Pages CMS** (pagescms.org), sin tocar código: todo lo que ella edita
 tiene que seguir siendo editable desde ahí.
 
@@ -24,15 +24,17 @@ También sirve Live Server de VS Code o `npx serve`.
 HTML + CSS + JS planos, sin frameworks ni bundler.
 
 ```
-index.html        # toda la estructura; las secciones fijas (cuadros, tatuajes, recitales, portfolio) se editan acá a mano
+index.html        # toda la estructura; las secciones fijas (tatuajes, recitales, portfolio) se editan acá a mano
 style.css         # estilos, numerados por sección
 app.js            # dibuja el catálogo de stickers desde products.json; carruseles, visor de fotos, modal de pedido y nav mobile
-products.json     # catálogo de stickers + lista de categorías. Es lo único que edita Pages CMS
+content/          # un JSON por sticker (stickers/) y por categoría (categorias/). Es lo único que edita Pages CMS
+products.json     # GENERADO por scripts/armar-catalogo.js desde content/. No editar a mano
+scripts/armar-catalogo.js  # valida content/ y arma products.json (correrlo en local tras tocar content/)
 .pages.yml        # el formulario que ve la diseñadora en Pages CMS
 assets/           # imágenes; Pages CMS sube las fotos acá
 .github/workflows/
   webp.yml               # al subir un JPG/PNG a assets/, genera el .webp y lo commitea
-  validar-catalogo.yml   # falla si un sticker no "próximamente" no tiene foto o apunta a una que no existe
+  catalogo.yml           # corre armar-catalogo.js: valida (foto, categoría) y commitea products.json
 ```
 
 ## Cómo funciona el catálogo
@@ -41,7 +43,7 @@ assets/           # imágenes; Pages CMS sube las fotos acá
   filtra los `productos` con ese `categoria`. **Una categoría sin stickers no se muestra** (ni el
   chip ni la sección).
 - Dentro de cada categoría, `orden` es la posición absoluta (1 = primera); los que no lo tienen
-  conservan el orden del JSON y se corren. Ver `acomodar()`.
+  siguen el orden de nombre de archivo en content/stickers/ (migrados "001-...", nuevos "AAAAMMDD-...") y se corren. Ver `acomodar()`.
 - `artista` solo tiene efecto en `sticker-artistas`: agrupa bajo un subtítulo.
 - `stock: 0` saca el botón Comprar. `proximamente: true` muestra la tarjeta gris sin foto.
 - Las tarjetas usan `<picture>` con el `.webp`; `conRespaldo()` cae al JPG/PNG original si el WebP
@@ -51,28 +53,23 @@ assets/           # imágenes; Pages CMS sube las fotos acá
 
 ### Categoría nueva de stickers
 
-Siempre en dos lugares, con el mismo `id` (`sticker-xxx`):
+La diseñadora la crea sola en Pages CMS (colección Categorías: `titulo`, `id` `sticker-xxx`, `orden`). El desplegable del sticker es un campo `reference` a esa colección.
 
-1. `products.json` → `categorias`: `{ "id", "titulo" }`. El orden de esa lista es el orden en la web.
-2. `.pages.yml` → opciones del campo `categoria`, para que aparezca en el desplegable.
-
-Y actualizar la lista de categorías de la tabla del `README.md`.
 
 ## Convenciones
 
 - **Copy en español rioplatense** (voseo: "Consultanos", "Escribinos"). Meses en minúscula
   ("11 de septiembre"). Las fechas de recitales van sin año.
-- Títulos de secciones y categorías en Title Case ("Cuadros Musicales", "Planchas Personalizadas").
+- Títulos de secciones y categorías en Title Case ("Tatuajes Temporales", "Planchas Personalizadas").
 - Los links de consulta van a `https://instagram.com/inercia.design`.
-- **Un mismo sticker en dos categorías se duplica en `products.json`** (pasa con las planchas LUX
+- **Un mismo sticker en dos categorías se duplica en `content/stickers/`** (pasa con las planchas LUX
   de Rosalía, en Artistas y en Planchas Personalizadas). Cada copia tiene su propio stock: no se
   sincronizan.
 - Las secciones sin contenido todavía (Tatuajes Temporales) llevan "Próximamente." como tagline y
   el link de consulta.
 - Recitales: los próximos van en `.events-grid`; los pasados en `.events-grid-past` con
   `event-card is-past`, el más reciente primero.
-- **No editar `products.json` con formato distinto al que guarda Pages CMS** (2 espacios), para no
-  ensuciar los diffs de sus commits.
+- **Los JSON de `content/` van con 2 espacios**, como los guarda Pages CMS. `products.json` no se edita a mano.
 - Los commits "via Pages CMS" son de la diseñadora: antes de trabajar, `git pull`.
 - **Al editar archivos por script en Windows, leer y escribir como UTF-8 sin BOM.**
 

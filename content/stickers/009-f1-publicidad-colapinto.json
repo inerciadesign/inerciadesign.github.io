@@ -1,0 +1,9 @@
+{
+  "nombre": "Publicidad Colapinto",
+  "categoria": "sticker-f1",
+  "imagen": "assets/colapinto-publicidad.png",
+  "alt": "Sticker publicidad Colapinto",
+  "precio": 500,
+  "stock": 1,
+  "proximamente": false
+}

@@ -1,0 +1,10 @@
+{
+  "nombre": "Estampita WOS",
+  "categoria": "sticker-artistas",
+  "artista": "WOS",
+  "imagen": "assets/wos-estampa-sticker-1.png",
+  "alt": "Sticker Estampita WOS",
+  "precio": 500,
+  "stock": 2,
+  "proximamente": false
+}

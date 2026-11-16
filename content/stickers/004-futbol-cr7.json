@@ -1,0 +1,9 @@
+{
+  "nombre": "CR7",
+  "categoria": "sticker-futbol",
+  "imagen": "assets/cr7-sticker-1.png",
+  "alt": "Sticker CR7",
+  "precio": 800,
+  "stock": 1,
+  "proximamente": false
+}

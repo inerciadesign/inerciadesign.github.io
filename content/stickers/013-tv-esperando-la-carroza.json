@@ -1,0 +1,9 @@
+{
+  "nombre": "Esperando la Carroza",
+  "categoria": "sticker-tv",
+  "imagen": "assets/sticker-esperando-carroza.jpg",
+  "alt": "Sticker Esperando la Carroza",
+  "precio": 800,
+  "stock": 1,
+  "proximamente": false
+}

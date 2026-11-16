@@ -26,44 +26,57 @@
     }, { once: true });
   }
 
-  function crearTarjeta(producto) {
+  function crearPlaceholder() {
     const card = document.createElement('div');
-    card.className = 'product-card';
+    card.className = 'product-card is-placeholder';
+    const plus = document.createElement('span');
+    plus.className = 'plus';
+    plus.textContent = '+';
+    const label = document.createElement('span');
+    label.className = 'label';
+    label.textContent = 'Próximamente';
+    card.append(plus, label);
+    return card;
+  }
 
-    if (esProximamente(producto)) {
-      card.classList.add('is-placeholder');
-      const plus = document.createElement('span');
-      plus.className = 'plus';
-      plus.textContent = '+';
-      const label = document.createElement('span');
-      label.className = 'label';
-      label.textContent = 'Próximamente';
-      card.append(plus, label);
-      return card;
-    }
-
+  function crearFoto(imagen, alt) {
     const cont = document.createElement('div');
     cont.className = 'product-image';
 
     const picture = document.createElement('picture');
     const source = document.createElement('source');
     source.type = 'image/webp';
-    source.srcset = webpDe(producto.imagen);
+    source.srcset = encodeURI(webpDe(imagen)).replace(/,/g, '%2C');
     const img = document.createElement('img');
-    img.src = producto.imagen;
-    img.alt = producto.alt || producto.nombre;
+    img.src = imagen;
+    img.alt = alt;
     img.loading = 'lazy';
     img.decoding = 'async';
     picture.append(source, img);
-    conRespaldo(picture, img, producto.imagen);
+    conRespaldo(picture, img, imagen);
     cont.appendChild(picture);
+    return cont;
+  }
+
+  function crearTitulo(texto) {
+    const titulo = document.createElement('p');
+    titulo.className = 'product-title';
+    titulo.textContent = sinViuda(texto);
+    return titulo;
+  }
+
+  function crearTarjeta(producto) {
+    if (esProximamente(producto)) return crearPlaceholder();
+
+    const card = document.createElement('div');
+    card.className = 'product-card';
+
+    const cont = crearFoto(producto.imagen, producto.alt || producto.nombre);
 
     const info = document.createElement('div');
     info.className = 'product-info';
 
-    const titulo = document.createElement('p');
-    titulo.className = 'product-title';
-    titulo.textContent = sinViuda(producto.nombre);
+    const titulo = crearTitulo(producto.nombre);
 
     const stock = Number(producto.stock) || 0;
     const precio = document.createElement('p');
@@ -178,6 +191,40 @@
       navCategorias.appendChild(chip);
 
       catalogo.appendChild(renderCategoria(categoria, delGrupo));
+    });
+  }
+
+  const MINIMO_TRABAJOS = 3;
+
+  function crearTarjetaTrabajo(trabajo) {
+    if (esProximamente(trabajo)) return crearPlaceholder();
+
+    const card = document.createElement('div');
+    card.className = 'product-card';
+
+    const info = document.createElement('div');
+    info.className = 'product-info';
+    info.appendChild(crearTitulo(trabajo.titulo));
+    if (trabajo.tipo) {
+      const tipo = document.createElement('p');
+      tipo.className = 'price-tag';
+      tipo.textContent = trabajo.tipo;
+      info.appendChild(tipo);
+    }
+
+    card.append(crearFoto(trabajo.imagen, trabajo.alt || trabajo.titulo), info);
+    return card;
+  }
+
+  function renderTrabajos(trabajos) {
+    document.querySelectorAll('[data-trabajos]').forEach(function (grid) {
+      const deLaSeccion = acomodar(trabajos.filter(function (t) {
+        return t.seccion === grid.dataset.trabajos;
+      }));
+      deLaSeccion.forEach(function (t) { grid.appendChild(crearTarjetaTrabajo(t)); });
+      for (let i = deLaSeccion.length; i < MINIMO_TRABAJOS; i++) {
+        grid.appendChild(crearPlaceholder());
+      }
     });
   }
 
@@ -487,8 +534,12 @@
       if (!res.ok) throw new Error('HTTP ' + res.status);
       return res.json();
     })
-    .then(renderCatalogo)
+    .then(function (data) {
+      renderCatalogo(data);
+      renderTrabajos(data.trabajos || []);
+    })
     .catch(function () {
+      renderTrabajos([]);
       const aviso = document.createElement('p');
       aviso.className = 'section-desc';
       aviso.textContent = 'No pudimos cargar el catálogo. Recargá la página o escribinos por Instagram.';

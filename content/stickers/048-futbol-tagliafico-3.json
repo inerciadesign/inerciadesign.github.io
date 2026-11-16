@@ -1,0 +1,9 @@
+{
+  "nombre": "Tagliafico 3",
+  "categoria": "sticker-futbol",
+  "imagen": "assets/tagliafico.png",
+  "alt": "Tagliafico 3 sticker",
+  "precio": 700,
+  "stock": 1,
+  "proximamente": false
+}

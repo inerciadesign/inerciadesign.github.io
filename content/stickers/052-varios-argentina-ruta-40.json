@@ -1,0 +1,9 @@
+{
+  "nombre": "Argentina Ruta 40",
+  "categoria": "sticker-varios",
+  "imagen": "assets/ruta40.png",
+  "alt": "Argentina Ruta 40 sticker",
+  "precio": 700,
+  "stock": 1,
+  "proximamente": true
+}

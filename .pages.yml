@@ -4,81 +4,157 @@ media:
   extensions: [jpg, jpeg, png, webp]
 
 content:
-  - name: catalogo
-    label: Catálogo de stickers
-    type: file
-    path: products.json
+  - name: stickers
+    label: Stickers
+    type: collection
+    path: content/stickers
+    format: json
+    filename: "{year}{month}{day}-{fields.nombre}.json"
+    view:
+      primary: nombre
+      fields: [nombre, categoria, precio, stock]
+      search: [nombre, artista]
+      default:
+        sort: nombre
     fields:
-      - name: productos
-        label: Stickers
-        type: object
-        list:
-          default: []
-        fields:
-          - name: nombre
-            label: Nombre del diseño
-            type: string
-            required: true
-          - name: categoria
-            label: Categoría
-            type: select
-            required: true
-            options:
-              values:
-                - { value: sticker-futbol, label: Fútbol }
-                - { value: sticker-f1, label: F1 }
-                - { value: sticker-tv, label: TV Argentina }
-                - { value: sticker-artistas, label: Artistas }
-                - { value: sticker-varios, label: Varios }
-                - { value: sticker-planchas, label: Planchas Personalizadas }
-          - name: artista
-            label: Artista
-            description: Solo para la categoría Artistas. Agrupa los stickers bajo un subtítulo.
-            type: string
-          - name: imagen
-            label: Foto
-            description: Obligatoria salvo que el sticker esté marcado como Próximamente. Si queda vacía, la tarjeta se muestra gris en la web.
-            type: image
-          - name: alt
-            label: Descripción de la foto
-            description: Para lectores de pantalla y buscadores.
-            type: string
-          - name: precio
-            label: Precio
-            type: number
-            options:
-              min: 0
-              step: 50
-          - name: stock
-            label: Unidades disponibles
-            type: number
-            options:
-              min: 0
-              step: 1
-          - name: orden
-            label: Posición en la fila
-            description: El lugar que ocupa dentro de su categoría; 1 lo pone primero y 3 tercero. Dejalo vacío para no fijarle posición.
-            type: number
-            options:
-              min: 1
-              step: 1
-          - name: proximamente
-            label: Próximamente
-            description: Muestra la tarjeta gris de "Próximamente" en lugar de la foto.
-            type: boolean
+      - name: nombre
+        label: Nombre del diseño
+        type: string
+        required: true
+      - name: categoria
+        label: Categoría
+        type: reference
+        required: true
+        options:
+          collection: categorias
+          value: "{fields.id}"
+          label: "{fields.titulo}"
+          search: "titulo"
+      - name: artista
+        label: Artista
+        description: Solo para la categoría Artistas. Agrupa los stickers bajo un subtítulo.
+        type: string
+      - name: imagen
+        label: Foto
+        description: Obligatoria salvo que el sticker esté marcado como Próximamente.
+        type: image
+      - name: alt
+        label: Descripción de la foto
+        description: Para lectores de pantalla y buscadores.
+        type: string
+      - name: precio
+        label: Precio
+        type: number
+        options:
+          min: 0
+          step: 50
+      - name: stock
+        label: Unidades disponibles
+        description: Con 0 se saca el botón Comprar.
+        type: number
+        options:
+          min: 0
+          step: 1
+      - name: orden
+        label: Posición en la fila
+        description: El lugar que ocupa dentro de su categoría; 1 lo pone primero. Dejalo vacío y va al final.
+        type: number
+        options:
+          min: 1
+          step: 1
+      - name: proximamente
+        label: Próximamente
+        description: Muestra la tarjeta gris de "Próximamente" en lugar de la foto.
+        type: boolean
 
-      - name: categorias
-        label: Categorías
-        type: object
-        list:
-          default: []
-        fields:
-          - name: id
-            label: ID
-            description: Se usa en el link del menú. No cambiarlo si ya hay stickers usándolo.
-            type: string
-            required: true
-          - name: titulo
-            label: Título
-            type: string
-            required: true
+  - name: trabajos
+    label: Trabajos (Identidad, Flyers y más)
+    type: collection
+    path: content/trabajos
+    format: json
+    filename: "{year}{month}{day}-{fields.titulo}.json"
+    view:
+      primary: titulo
+      fields: [titulo, seccion, tipo]
+      search: [titulo]
+      default:
+        sort: titulo
+    fields:
+      - name: titulo
+        label: Título
+        description: El nombre de la marca o del trabajo.
+        type: string
+        required: true
+      - name: seccion
+        label: Sección de la web
+        type: select
+        required: true
+        options:
+          values:
+            - { value: identidad, label: Identidad Visual }
+            - { value: flyers, label: Flyers }
+            - { value: otros, label: También hacemos otras cosas }
+      - name: tipo
+        label: Tipo de trabajo
+        description: Opcional. Se muestra debajo del título (por ejemplo Packaging o Cartelería).
+        type: select
+        options:
+          values:
+            - Piezas para Redes
+            - Cartelería
+            - Trabajos Editoriales
+            - Packaging
+            - Lonas
+            - Otros Proyectos Gráficos
+      - name: imagen
+        label: Foto
+        description: Obligatoria salvo que esté marcado como Próximamente.
+        type: image
+      - name: alt
+        label: Descripción de la foto
+        description: Para lectores de pantalla y buscadores.
+        type: string
+      - name: orden
+        label: Posición en la fila
+        description: 1 lo pone primero. Dejalo vacío y va al final.
+        type: number
+        options:
+          min: 1
+          step: 1
+      - name: proximamente
+        label: Próximamente
+        description: Muestra la tarjeta gris de "Próximamente" en lugar de la foto.
+        type: boolean
+
+  - name: categorias
+    label: Categorías de stickers
+    type: collection
+    path: content/categorias
+    format: json
+    filename: "{fields.id}.json"
+    view:
+      primary: titulo
+      fields: [titulo, orden]
+      default:
+        sort: orden
+    fields:
+      - name: titulo
+        label: Título
+        description: Como se ve en la web, en Title Case ("Planchas Personalizadas").
+        type: string
+        required: true
+      - name: id
+        label: ID
+        description: En minúscula y sin espacios, empezando con "sticker-" (por ejemplo sticker-anime). No cambiarlo si ya hay stickers usándolo.
+        type: string
+        required: true
+        pattern:
+          regex: "^sticker-[a-z0-9-]+$"
+          message: Tiene que empezar con sticker- y llevar solo minúsculas, números y guiones.
+      - name: orden
+        label: Posición en el menú
+        description: 1 la pone primera. Una categoría sin stickers no se muestra.
+        type: number
+        options:
+          min: 1
+          step: 1

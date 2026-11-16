@@ -1,0 +1,10 @@
+{
+  "nombre": "Plancha LUX 02",
+  "categoria": "sticker-artistas",
+  "artista": "Rosalía",
+  "imagen": "assets/plancha rosalia 2.png",
+  "alt": "Plancha stickers LUX Rosalía",
+  "precio": 3000,
+  "stock": 9,
+  "proximamente": false
+}

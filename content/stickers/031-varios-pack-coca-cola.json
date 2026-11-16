@@ -1,0 +1,9 @@
+{
+  "nombre": "Pack Coca-Cola",
+  "categoria": "sticker-varios",
+  "imagen": "assets/sticker-pack-cocacola.jpg",
+  "alt": "Sticker Pack Coca-Cola",
+  "precio": 700,
+  "stock": 1,
+  "proximamente": false
+}

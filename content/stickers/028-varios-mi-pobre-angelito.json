@@ -1,0 +1,9 @@
+{
+  "nombre": "Mi Pobre Angelito",
+  "categoria": "sticker-varios",
+  "imagen": "assets/angelito-sticker.png",
+  "alt": "Sticker Mi Pobre Angelito",
+  "precio": 700,
+  "stock": 1,
+  "proximamente": false
+}
